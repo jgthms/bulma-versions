@@ -1,0 +1,97 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "bulma-start",
+        "scope": null,
+        "escapedName": "bulma-start",
+        "name": "bulma-start",
+        "rawSpec": "",
+        "spec": "latest",
+        "type": "tag"
+      },
+      "/Users/jthomas/Code/GitHub/jgthms/bulma-versions"
+    ]
+  ],
+  "_from": "bulma-start@latest",
+  "_id": "bulma-start@0.0.2",
+  "_inCache": true,
+  "_location": "/bulma-start",
+  "_nodeVersion": "6.11.0",
+  "_npmOperationalInternal": {
+    "host": "s3://npm-registry-packages",
+    "tmp": "tmp/bulma-start-0.0.2.tgz_1507895382789_0.6795484863687307"
+  },
+  "_npmUser": {
+    "name": "jgthms",
+    "email": "bbxdesign@gmail.com"
+  },
+  "_npmVersion": "3.10.10",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "bulma-start",
+    "scope": null,
+    "escapedName": "bulma-start",
+    "name": "bulma-start",
+    "rawSpec": "",
+    "spec": "latest",
+    "type": "tag"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "https://registry.npmjs.org/bulma-start/-/bulma-start-0.0.2.tgz",
+  "_shasum": "472507881b1b27af29e009c8599503e1462d2031",
+  "_shrinkwrap": null,
+  "_spec": "bulma-start",
+  "_where": "/Users/jthomas/Code/GitHub/jgthms/bulma-versions",
+  "author": {
+    "name": "Jeremy Thomas",
+    "email": "bbxdesign@gmail.com",
+    "url": "http://jgthms.com"
+  },
+  "dependencies": {},
+  "description": "Start package for Bulma",
+  "devDependencies": {
+    "autoprefixer": "^7.1.5",
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.0",
+    "babel-preset-es2015-ie": "^6.7.0",
+    "bulma": "^0.6.0",
+    "node-sass": "^4.5.3",
+    "postcss-cli": "^4.1.1"
+  },
+  "directories": {},
+  "dist": {
+    "shasum": "472507881b1b27af29e009c8599503e1462d2031",
+    "tarball": "https://registry.npmjs.org/bulma-start/-/bulma-start-0.0.2.tgz"
+  },
+  "gitHead": "d8d56bb2e0cfaf101f7b9cd6ae5da0977dd8112a",
+  "keywords": [
+    "sass",
+    "bulma",
+    "css",
+    "start"
+  ],
+  "license": "MIT",
+  "maintainers": [
+    {
+      "name": "jgthms",
+      "email": "bbxdesign@gmail.com"
+    }
+  ],
+  "name": "bulma-start",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "scripts": {
+    "css-build": "node-sass _sass/main.scss css/main.css",
+    "css-deploy": "npm run css-build && npm run css-postcss",
+    "css-postcss": "postcss --use autoprefixer --output css/main.css css/main.css",
+    "css-watch": "npm run css-build -- --watch",
+    "deploy": "npm run css-deploy && npm run js-build",
+    "js-build": "babel _javascript --out-dir lib",
+    "js-watch": "npm run js-build -- --watch",
+    "start": "npm run css-watch | npm run js-watch"
+  },
+  "version": "0.0.2"
+}
