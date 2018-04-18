@@ -1,0 +1,960 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bulma test page</title>
+    <link rel="stylesheet" href="https://versions.bulma.io/0.7.1/css/bulma-docs.css?v=201804181732">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+  </head>
+  <body>
+    <!-- <object type="application/x-shockwave-flash" data="https://htmlreference.io/assets/golf.swf">
+      <param name="movie" value="https://htmlreference.io/assets/golf.swf">
+      <param name="wmode" value="transparent">
+      <p>You need to enable Flash to view this content.</p>
+    </object> -->
+    <!-- <embed src="https://www.youtube.com/embed/kmk43_2dtn0" width="640" height="480"> -->
+    <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/hK8ONv4wcbA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> -->
+    <!-- <iframe width="420" height="345" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe> -->
+    <nav id="navbar" class="navbar has-shadow is-spaced">
+  <div class="container">
+  <div class="navbar-brand">
+    <a class="navbar-item" href="https://versions.bulma.io/0.7.1">
+      <img src="https://versions.bulma.io/0.7.1/images/bulma-logo.png" alt="Bulma: a modern CSS framework based on Flexbox" width="112" height="28">
+    </a>
+
+    <a class="navbar-item is-hidden-desktop" href="https://github.com/jgthms/bulma" target="_blank">
+      <span class="icon" style="color: #333;">
+        <i class="fab fa-lg fa-github-alt"></i>
+      </span>
+    </a>
+
+    <a class="navbar-item is-hidden-desktop" href="https://twitter.com/jgthms" target="_blank">
+      <span class="icon" style="color: #55acee;">
+        <i class="fab fa-lg fa-twitter"></i>
+      </span>
+    </a>
+
+    <div id="navbarBurger" class="navbar-burger burger" data-target="navMenu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+
+  <div id="navMenu" class="navbar-menu">
+    <div class="navbar-start">
+      <a class="navbar-item bd-navbar-item-documentation  " href="/documentation">
+        <span class="icon has-text-primary">
+          <i class="fas fa-book"></i>
+        </span>
+        <span>Documentation</span>
+      </a>
+
+      
+        <a class="navbar-item bd-navbar-item-blog " href="https://versions.bulma.io/0.7.1/blog/">
+          <span class="icon bd-has-text-rss">
+            <i class="fas fa-rss"></i>
+          </span>
+          <span>Blog</span>
+        </a>
+      
+        <a class="navbar-item bd-navbar-item-expo " href="https://versions.bulma.io/0.7.1/expo/">
+          <span class="icon has-text-star">
+            <i class="fas fa-star"></i>
+          </span>
+          <span>Expo</span>
+        </a>
+      
+        <a class="navbar-item bd-navbar-item-love " href="https://versions.bulma.io/0.7.1/love/">
+          <span class="icon has-text-danger">
+            <i class="fas fa-heart"></i>
+          </span>
+          <span>Love</span>
+        </a>
+      
+
+      <div class="navbar-item has-dropdown is-hoverable">
+        
+        <a class="navbar-link" href="https://versions.bulma.io/0.7.1/more">
+          More
+        </a>
+        <div id="moreDropdown" class="navbar-dropdown">
+          
+            
+            <a class="navbar-item " href="https://versions.bulma.io/0.7.1//bulma-start">
+              <span>
+                <span class="icon has-text-success">
+                  <i class="fas fa-rocket"></i>
+                </span>
+                <strong>Bulma start</strong>
+                <br>
+                A tiny npm package to get started
+              </span>
+            </a>
+            
+              <hr class="navbar-divider">
+            
+          
+            
+            <a class="navbar-item " href="https://versions.bulma.io/0.7.1//made-with-bulma">
+              <span>
+                <span class="icon has-text-primary">
+                  <i class="fas fa-certificate"></i>
+                </span>
+                <strong>Made with Bulma</strong>
+                <br>
+                The official community badge
+              </span>
+            </a>
+            
+              <hr class="navbar-divider">
+            
+          
+            
+            <a class="navbar-item " href="https://versions.bulma.io/0.7.1//alternative-to-bootstrap">
+              <span>
+                <span class="icon has-text-bootstrap">
+                  <i class="fas fa-exchange-alt"></i>
+                </span>
+                <strong>Coming from Bootstrap</strong>
+                <br>
+                See how Bulma is an alternative to Bootstrap
+              </span>
+            </a>
+            
+              <hr class="navbar-divider">
+            
+          
+            
+            <a class="navbar-item " href="https://versions.bulma.io/0.7.1//backers">
+              <span>
+                <span class="icon has-text-patreon">
+                  <i class="fab fa-patreon"></i>
+                </span>
+                <strong>Patreon backers</strong>
+                <br>
+                Everyone who is supporting Bulma
+              </span>
+            </a>
+            
+              <hr class="navbar-divider">
+            
+          
+            
+            <a class="navbar-item " href="https://versions.bulma.io/0.7.1//extensions">
+              <span>
+                <span class="icon has-text-orange">
+                  <i class="fas fa-plug"></i>
+                </span>
+                <strong>Bulma extensions</strong>
+                <br>
+                Side projects to enhance Bulma
+              </span>
+            </a>
+            
+          
+        </div>
+      </div>
+    </div>
+
+    <div class="navbar-end">
+      <a class="navbar-item is-hidden-mobile" href="https://github.com/jgthms/bulma" target="_blank">
+        <span class="icon" style="color: #333;">
+          <i class="fab fa-lg fa-github-alt"></i>
+        </span>
+      </a>
+      <a class="navbar-item is-hidden-mobile" href="https://twitter.com/jgthms" target="_blank">
+        <span class="icon" style="color: #55acee;">
+          <i class="fab fa-lg fa-twitter"></i>
+        </span>
+      </a>
+      <div class="navbar-item">
+        <div class="field is-grouped is-grouped-multiline">
+          <p class="control">
+            <a class="bd-patreon-button" href="https://www.patreon.com/jgthms" target="_blank">
+  <img
+  src="https://versions.bulma.io/0.7.1/images/become-a-patron.png"
+  srcset="https://versions.bulma.io/0.7.1/images/become-a-patron.png 1x,
+          https://versions.bulma.io/0.7.1/images/become-a-patron@2x.png 2x,
+          https://versions.bulma.io/0.7.1/images/become-a-patron@3x.png 3x"
+  alt="Become a Patron"
+  width="148"
+  height="36">
+
+</a>
+
+          </p>
+          <p class="control">
+            <a class="button is-primary" href="https://github.com/jgthms/bulma/releases/download/0.7.0/bulma-0.7.0.zip">
+              <strong>Download</strong>
+            </a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+</nav>
+
+    
+
+
+
+<div class="bd-focus">
+  <nav class="columns">
+    <a class="bd-focus-item column has-text-centered" href="https://versions.bulma.io/0.7.1/documentation/overview/responsiveness">
+      <p class="title is-4">
+        <strong>100% Responsive</strong>
+      </p>
+      <p class="subtitle is-6">Designed for <strong>mobile</strong> first</p>
+      <figure class="bd-focus-icon">
+        <span class="bd-focus-mobile icon is-large">
+          <i class="fas fa-lg fa-mobile-alt"></i>
+        </span>
+        <span class="bd-focus-tablet icon is-large">
+          <i class="fas fa-2x fa-tablet-alt"></i>
+        </span>
+        <span class="bd-focus-desktop icon is-large">
+          <i class="fas fa-3x fa-desktop"></i>
+        </span>
+      </figure>
+    </a>
+
+    <a class="bd-focus-item column has-text-centered" href="https://versions.bulma.io/0.7.1/documentation/overview/modular">
+      <p class="title is-4">
+        <strong>Modular</strong>
+      </p>
+      <p class="subtitle is-6">
+        Just import what you <strong>need</strong>
+      </p>
+      <figure class="bd-focus-cubes bd-focus-icon">
+        <span class="bd-focus-cube bd-focus-cube-1 icon is-large">
+          <i class="fas fa-2x fa-cube"></i>
+        </span>
+        <span class="bd-focus-cube bd-focus-cube-2 icon is-large">
+          <i class="fas fa-2x fa-cube"></i>
+        </span>
+        <span class="bd-focus-cube bd-focus-cube-3 icon is-large">
+          <i class="fas fa-2x fa-cube"></i>
+        </span>
+      </figure>
+    </a>
+
+    <a class="bd-focus-item column has-text-centered" href="https://versions.bulma.io/0.7.1/documentation/columns/basics">
+      <p class="title is-4">
+        <strong>Modern</strong>
+      </p>
+      <p class="subtitle is-6">
+        Built with <strong>Flexbox</strong>
+      </p>
+      <figure class="bd-focus-icon">
+        <span class="bd-focus-css3 icon is-large">
+          <i class="fab fa-3x fa-css3"></i>
+        </span>
+      </figure>
+    </a>
+
+    <a class="bd-focus-item column has-text-centered" href="https://github.com/jgthms/bulma" target="_blank">
+      <p class="title is-4">
+        <strong>Free</strong>
+      </p>
+      <p class="subtitle is-6">
+        Open source on <strong>GitHub</strong>
+      </p>
+      <figure class="bd-focus-icon">
+        <span class="bd-focus-github icon is-large">
+          <i class="fab fa-3x fa-github-alt"></i>
+        </span>
+      </figure>
+    </a>
+  </nav>
+</div>
+
+    <!-- <section class="section">
+  <div class="container">
+    <div class="bd-fromto">
+      <h1 class="title">
+        Bulma
+      </h1>
+      <p class="subtitle">
+        Modern CSS framework based on <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox">Flexbox</a>
+      </p>
+      <div class="field">
+        <label class="label">Form label</label>
+        <div class="control">
+          <input class="input" type="text" placeholder="Input">
+        </div>
+      </div>
+      <div class="field">
+        <p class="control">
+          <span class="select">
+            <select>
+              <option>Select dropdown</option>
+            </select>
+          </span>
+        </p>
+      </div>
+      <div class="buttons">
+        <a class="button is-primary">Primary</a>
+        <a class="button is-link">Link</a>
+      </div>
+    </div>
+  </div>
+</section>
+ -->
+    <!-- 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="section">
+  <div class="container">
+    <div class="columns">
+      <div class="column is-2">
+        <h4 class="title is-4"><strong>Elements</strong></h4>
+      </div>
+      <div class="column is-10">
+        <div class="columns">
+          <div class="column is-3">
+            <h4 class="subtitle is-4 bd-feature-title">
+              <a href="https://versions.bulma.io/0.7.1/documentation/form/general/">
+                Form
+              </a>
+            </h4>
+          </div>
+          <div class="column is-9">
+            
+<div class="field">
+  <label class="label">Form label</label>
+  <div class="control">
+    <input class="input" type="text" placeholder="Input">
+  </div>
+</div>
+<div class="field">
+  <p class="control">
+    <span class="select">
+      <select>
+        <option>Select dropdown</option>
+      </select>
+    </span>
+  </p>
+</div>
+<div class="field">
+  <p class="control">
+    <textarea class="textarea" placeholder="Textarea"></textarea>
+  </p>
+</div>
+<div class="field">
+  <p class="control">
+    <label class="checkbox">
+      <input type="checkbox">
+      Checkbox
+    </label>
+  </p>
+</div>
+<div class="field">
+  <p class="control">
+    <label class="radio">
+      <input type="radio" name="question">
+      Radio
+    </label>
+    <label class="radio">
+      <input type="radio" name="question">
+      Buttons
+    </label>
+  </p>
+</div>
+<div class="field">
+  <p class="control">
+    <a class="button is-link">Button</a>
+  </p>
+</div>
+
+          </div>
+        </div>
+
+        <div class="columns">
+          <div class="column is-3">
+            <h4 class="subtitle is-4 bd-feature-title">
+              <a href="https://versions.bulma.io/0.7.1/documentation/elements/box/">
+                Box
+              </a>
+            </h4>
+          </div>
+          <div class="column is-9">
+            
+<div class="box">
+  <article class="media">
+    <div class="media-left">
+      <figure class="image is-64x64">
+        <img src="https://versions.bulma.io/0.7.1/images/placeholders/128x128.png" alt="Image">
+      </figure>
+    </div>
+    <div class="media-content">
+      <div class="content">
+        <p>
+          <strong>John Smith</strong> <small>@johnsmith</small> <small>31m</small>
+          <br>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa fringilla egestas. Nullam condimentum luctus turpis.
+        </p>
+      </div>
+      <nav class="level is-mobile">
+        <div class="level-left">
+          <a class="level-item">
+            <span class="icon is-small"><i class="fas fa-reply"></i></span>
+          </a>
+          <a class="level-item">
+            <span class="icon is-small"><i class="fas fa-retweet"></i></span>
+          </a>
+          <a class="level-item">
+            <span class="icon is-small"><i class="fas fa-heart"></i></span>
+          </a>
+        </div>
+      </nav>
+    </div>
+  </article>
+</div>
+
+          </div>
+        </div>
+
+        <div class="columns">
+          <div class="column is-3">
+            <h4 class="subtitle is-4 bd-feature-title">
+              <a href="https://versions.bulma.io/0.7.1/documentation/elements/button/">
+                Button
+              </a>
+            </h4>
+          </div>
+          <div class="column is-9">
+            
+<div class="field is-grouped is-grouped-multiline">
+  <div class="control"><a class="button">Button</a></div>
+  <div class="control"><a class="button is-white">White</a></div>
+  <div class="control"><a class="button is-light">Light</a></div>
+  <div class="control"><a class="button is-dark">Dark</a></div>
+  <div class="control"><a class="button is-black">Black</a></div>
+  <div class="control"><a class="button is-text">Text</a></div>
+</div>
+
+<div class="field is-grouped is-grouped-multiline">
+  <div class="control"><a class="button is-primary">Primary</a></div>
+  <div class="control"><a class="button is-link">Link</a></div>
+  <div class="control"><a class="button is-info">Info</a></div>
+  <div class="control"><a class="button is-success">Success</a></div>
+  <div class="control"><a class="button is-warning">Warning</a></div>
+  <div class="control"><a class="button is-danger">Danger</a></div>
+</div>
+
+          </div>
+        </div>
+
+        <div class="columns">
+          <div class="column is-3">
+            <h4 class="subtitle is-4 bd-feature-title">
+              <a href="https://versions.bulma.io/0.7.1/documentation/elements/notification/">
+                Notification
+              </a>
+            </h4>
+          </div>
+          <div class="column is-9">
+            
+<div class="notification is-primary">
+  <button class="delete"></button>
+  Lorem ipsum dolor sit amet, consectetur
+  adipiscing elit lorem ipsum dolor. <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum <a>felis venenatis</a> efficitur. Sit amet,
+  consectetur adipiscing elit
+</div>
+
+          </div>
+        </div>
+
+        <div class="columns">
+          <div class="column is-3">
+            <h4 class="subtitle is-4 bd-feature-title">
+              <a href="https://versions.bulma.io/0.7.1/documentation/elements/progress/">
+                Progress bar
+              </a>
+            </h4>
+          </div>
+          <div class="column is-9">
+            
+<progress class="progress is-primary" value="30" max="100">30%</progress>
+
+          </div>
+        </div>
+
+        <div class="columns">
+          <div class="column is-3">
+            <h4 class="subtitle is-4 bd-feature-title">
+              <a href="https://versions.bulma.io/0.7.1/documentation/elements/tag/">
+                Tags
+              </a>
+            </h4>
+          </div>
+          <div class="column is-9">
+            
+<span class="tag is-black">Black</span>
+<span class="tag is-dark">Dark</span>
+<span class="tag is-light">Light</span>
+<span class="tag is-white">White</span>
+<span class="tag is-primary">Primary</span>
+<span class="tag is-link">Link</span>
+<span class="tag is-info">Info</span>
+<span class="tag is-success">Success</span>
+<span class="tag is-warning">Warning</span>
+<span class="tag is-danger">Danger</span>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr>
+
+<section class="section">
+  <div class="container">
+    <div class="columns">
+      <div class="column is-2">
+        <h4 class="title is-4"><strong>Components</strong></h4>
+      </div>
+      <div class="column is-10">
+        <div class="columns">
+          <div class="column is-3">
+            <h4 class="subtitle is-4 bd-feature-title">
+              <a href="https://versions.bulma.io/0.7.1/documentation/components/card/">
+                Card
+              </a>
+            </h4>
+          </div>
+          <div class="column is-9">
+            
+<div class="columns">
+  <div class="column is-half">
+    <div class="card">
+      <div class="card-image">
+        <figure class="image is-4by3">
+          <img src="https://versions.bulma.io/0.7.1/images/placeholders/1280x960.png" alt="Image">
+        </figure>
+      </div>
+      <div class="card-content">
+        <div class="media">
+          <div class="media-left">
+            <figure class="image is-48x48">
+              <img src="https://versions.bulma.io/0.7.1/images/placeholders/96x96.png" alt="Image">
+            </figure>
+          </div>
+          <div class="media-content">
+            <p class="title is-4">John Smith</p>
+            <p class="subtitle is-6">@johnsmith</p>
+          </div>
+        </div>
+
+        <div class="content">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          Phasellus nec iaculis mauris. <a>@bulmaio</a>.
+          <a>#css</a> <a>#responsive</a>
+          <br>
+          <small>11:09 PM - 1 Jan 2016</small>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="column is-half">
+    <div class="card">
+      <div class="card-content">
+        <p class="title">
+          “There are two hard things in computer science: cache invalidation, naming things, and off-by-one errors.”
+        </p>
+        <p class="subtitle">
+          Jeff Atwood
+        </p>
+      </div>
+      <footer class="card-footer">
+        <p class="card-footer-item">
+          <span>
+            View on <a href="https://twitter.com/codinghorror/status/506010907021828096">Twitter</a>
+          </span>
+        </p>
+        <p class="card-footer-item">
+          <span>
+            Share on <a href="#">Facebook</a>
+          </span>
+        </p>
+      </footer>
+    </div>
+  </div>
+</div>
+
+          </div>
+        </div>
+
+        <div class="columns">
+          <div class="column is-3">
+            <h4 class="subtitle is-4 bd-feature-title">
+              <a href="https://versions.bulma.io/0.7.1/documentation/components/dropdown/">
+                Dropdown
+              </a>
+            </h4>
+          </div>
+          <div class="column is-9" style="height: 16rem;">
+            
+<div class="dropdown is-active">
+  <div class="dropdown-trigger">
+    <a class="button">
+      <span>Dropdown button</span>
+      <span class="icon is-small">
+        <i class="fas fa-angle-down"></i>
+      </span>
+    </a>
+  </div>
+  <div class="dropdown-menu">
+    <div class="dropdown-content">
+      <a class="dropdown-item">
+        Dropdown item
+      </a>
+      <a class="dropdown-item">
+        Other dropdown item
+      </a>
+      <a class="dropdown-item is-active">
+        Active dropdown item
+      </a>
+      <a class="dropdown-item">
+        Other item
+      </a>
+      <hr class="dropdown-divider">
+      <a class="dropdown-item">
+        With a divider
+      </a>
+    </div>
+  </div>
+</div>
+
+          </div>
+        </div>
+
+        <div class="columns">
+          <div class="column is-3">
+            <h4 class="subtitle is-4 bd-feature-title">
+              <a href="https://versions.bulma.io/0.7.1/documentation/components/message/">
+                Message
+              </a>
+            </h4>
+          </div>
+          <div class="column is-9">
+            
+<article class="message is-primary">
+  <div class="message-header">
+    <p>Primary</p>
+    <button class="delete"></button>
+  </div>
+  <div class="message-body">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum <a>felis venenatis</a> efficitur. Aenean ac <em>eleifend lacus</em>, in mollis lectus. Donec sodales, arcu et sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem.
+  </div>
+</article>
+
+          </div>
+        </div>
+
+        <div class="columns">
+          <div class="column is-3">
+            <h4 class="subtitle is-4 bd-feature-title">
+              <a href="https://versions.bulma.io/0.7.1/documentation/components/pagination/">
+                Pagination
+              </a>
+            </h4>
+          </div>
+          <div class="column is-9">
+            
+<nav class="pagination">
+  <a class="pagination-previous">Previous</a>
+  <a class="pagination-next">Next page</a>
+  <ul class="pagination-list">
+    <li>
+      <a class="pagination-link">1</a>
+    </li>
+    <li>
+      <span class="pagination-ellipsis">&hellip;</span>
+    </li>
+    <li>
+      <a class="pagination-link">45</a>
+    </li>
+    <li>
+      <a class="pagination-link is-current">46</a>
+    </li>
+    <li>
+      <a class="pagination-link">47</a>
+    </li>
+    <li>
+      <span class="pagination-ellipsis">&hellip;</span>
+    </li>
+    <li>
+      <a class="pagination-link">86</a>
+    </li>
+  </ul>
+</nav>
+
+          </div>
+        </div>
+
+        <div class="columns">
+          <div class="column is-3">
+            <h4 class="subtitle is-4 bd-feature-title">
+              <a href="https://versions.bulma.io/0.7.1/documentation/components/tabs/">
+                Tabs
+              </a>
+            </h4>
+          </div>
+          <div class="column is-9">
+            
+<div class="tabs is-boxed">
+  <ul>
+    <li class="is-active">
+      <a>
+        <span class="icon is-small"><i class="fas fa-image"></i></span>
+        <span>Pictures</span>
+      </a>
+    </li>
+    <li>
+      <a>
+        <span class="icon is-small"><i class="fas fa-music"></i></span>
+        <span>Music</span>
+      </a>
+    </li>
+    <li>
+      <a>
+        <span class="icon is-small"><i class="fas fa-film"></i></span>
+        <span>Videos</span>
+      </a>
+    </li>
+    <li>
+      <a>
+        <span class="icon is-small"><i class="fas fa-file-alt"></i></span>
+        <span>Documents</span>
+      </a>
+    </li>
+  </ul>
+</div>
+
+          </div>
+        </div>
+
+        <div class="columns">
+          <div class="column is-3">
+            <h4 class="subtitle is-4 bd-feature-title">
+              <a href="https://versions.bulma.io/0.7.1/documentation/layout/media-object/">
+                Media object
+              </a>
+            </h4>
+          </div>
+          <div class="column is-9">
+            
+<article class="media">
+  <figure class="media-left">
+    <p class="image is-64x64">
+      <img src="https://versions.bulma.io/0.7.1/images/placeholders/128x128.png">
+    </p>
+  </figure>
+  <div class="media-content">
+    <div class="content">
+      <p>
+        <strong>John Smith</strong> <small>@johnsmith</small> <small>31m</small>
+        <br>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.
+      </p>
+    </div>
+    <nav class="level is-mobile">
+      <div class="level-left">
+        <a class="level-item">
+          <span class="icon is-small"><i class="fas fa-reply"></i></span>
+        </a>
+        <a class="level-item">
+          <span class="icon is-small"><i class="fas fa-retweet"></i></span>
+        </a>
+        <a class="level-item">
+          <span class="icon is-small"><i class="fas fa-heart"></i></span>
+        </a>
+      </div>
+    </nav>
+  </div>
+  <div class="media-right">
+    <button class="delete"></button>
+  </div>
+</article>
+
+          </div>
+        </div>
+
+        <div class="columns">
+          <div class="column is-3">
+            <h4 class="subtitle is-4 bd-feature-title">
+              <a href="https://versions.bulma.io/0.7.1/documentation/components/menu/">
+                Menu
+              </a>
+              and
+              <a href="https://versions.bulma.io/0.7.1/documentation/components/panel/">
+                Panel
+              </a>
+            </h4>
+          </div>
+          <div class="column is-9">
+            <div class="columns">
+              <div class="column is-half">
+                
+<aside class="menu">
+  <p class="menu-label">
+    General
+  </p>
+  <ul class="menu-list">
+    <li><a>Dashboard</a></li>
+    <li><a>Customers</a></li>
+  </ul>
+  <p class="menu-label">
+    Administration
+  </p>
+  <ul class="menu-list">
+    <li><a>Team Settings</a></li>
+    <li>
+      <a class="is-active">Manage Your Team</a>
+      <ul>
+        <li><a>Members</a></li>
+        <li><a>Plugins</a></li>
+        <li><a>Add a member</a></li>
+      </ul>
+    </li>
+    <li><a>Invitations</a></li>
+    <li><a>Cloud Storage Environment Settings</a></li>
+    <li><a>Authentication</a></li>
+  </ul>
+  <p class="menu-label">
+    Transactions
+  </p>
+  <ul class="menu-list">
+    <li><a>Payments</a></li>
+    <li><a>Transfers</a></li>
+    <li><a>Balance</a></li>
+  </ul>
+</aside>
+
+              </div>
+              <div class="column is-half">
+                
+<nav class="panel">
+  <p class="panel-heading">
+    Repositories
+  </p>
+  <div class="panel-block">
+    <p class="control has-icons-left">
+      <input class="input is-small" type="text" placeholder="Search">
+      <span class="icon is-small is-left">
+        <i class="fas fa-search"></i>
+      </span>
+    </p>
+  </div>
+  <p class="panel-tabs">
+    <a class="is-active">All</a>
+    <a>Public</a>
+    <a>Private</a>
+    <a>Sources</a>
+    <a>Forks</a>
+  </p>
+  <a class="panel-block is-active">
+    <span class="panel-icon">
+      <i class="fas fa-book"></i>
+    </span>
+    bulma
+  </a>
+  <a class="panel-block">
+    <span class="panel-icon">
+      <i class="fas fa-book"></i>
+    </span>
+    marksheet
+  </a>
+  <a class="panel-block">
+    <span class="panel-icon">
+      <i class="fas fa-book"></i>
+    </span>
+    minireset.css
+  </a>
+  <a class="panel-block">
+    <span class="panel-icon">
+      <i class="fas fa-book"></i>
+    </span>
+    jgthms.github.io
+  </a>
+  <a class="panel-block">
+    <span class="panel-icon">
+      <i class="fas fa-code-branch"></i>
+    </span>
+    daniellowtw/infBoard
+  </a>
+  <a class="panel-block">
+    <span class="panel-icon">
+      <i class="fas fa-code-branch"></i>
+    </span>
+    mojs
+  </a>
+  <label class="panel-block">
+    <input type="checkbox">
+    Remember me
+  </label>
+  <div class="panel-block">
+    <button class="button is-link is-outlined is-fullwidth">
+      Reset all filters
+    </button>
+  </div>
+</nav>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+ -->
+    <script async defer id="twitter-wjs" src="https://platform.twitter.com/widgets.js"></script>
+    <script async defer type="text/javascript">(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.async = true;
+  js.defer = true;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8&appId=310296819307942";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+    <script src="https://versions.bulma.io/0.7.1/vendor/clipboard-1.7.1.min.js"></script>
+    <script src="https://versions.bulma.io/0.7.1/vendor/js.cookie-2.1.4.min.js"></script>
+    <script src="https://versions.bulma.io/0.7.1/lib/main.js?v=201804181732"></script>
+  </body>
+</html>
