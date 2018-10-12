@@ -1,0 +1,4 @@
+markdown:      kramdown
+permalink:     pretty
+url:           https://versions/bulma.io
+exclude:       ['icons', 'node_modules', 'templates', '.babelrc', 'bulma-docs.sass', 'docker-compose.yml', 'package.json', 'yarn.lock']

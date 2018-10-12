@@ -10,7 +10,7 @@
     "babel-cli": "^6.26.0",
     "babel-preset-env": "^1.6.0",
     "babel-preset-es2015-ie": "^6.7.0",
-    "bulma": "^0.6.0",
+    "bulma": "^0.7.2",
     "node-sass": "^4.5.3",
     "postcss-cli": "^4.1.1"
   },
@@ -34,10 +34,8 @@
     "css-deploy": "npm run css-build && npm run css-postcss",
     "css-postcss": "postcss --use autoprefixer --output css/main.css css/main.css",
     "css-watch": "npm run css-build -- --watch",
-    "deploy": "npm run css-deploy && npm run js-build",
-    "js-build": "babel _javascript --out-dir lib",
-    "js-watch": "npm run js-build -- --watch",
-    "start": "npm run css-watch | npm run js-watch"
+    "deploy": "npm run css-deploy",
+    "start": "npm run css-watch"
   },
   "version": "0.0.2"
 }

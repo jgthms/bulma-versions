@@ -1,3 +1,17 @@
+---
+versions:
+- 0.7.1
+- 0.7.0
+- 0.6.2
+- 0.6.1
+- 0.6.0
+- 0.5.3
+- 0.5.2
+- 0.5.1
+- 0.5.0
+- 0.4.4
+---
+
 <!DOCTYPE html>
 <html>
   <head>
@@ -5,7 +19,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bulma Versions: access the documentation for the current and previous Bulma releases</title>
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="{{ site.url }}/css/main.css">
   </head>
   <body>
     <section class="hero is-fullheight">
@@ -20,56 +34,16 @@
           <div class="field is-grouped is-grouped-multiline">
             <div class="control">
               <a class="button is-link is-outlined" href="https://bulma.io/">
-                <p><strong>Current</strong>: 0.7.1</p>
+                <p><strong>Current</strong>: 0.7.2</p>
               </a>
             </div>
           </div>
-          <div class="field is-grouped is-grouped-multiline">
-            <div class="control">
-              <a class="button is-small is-outlined" href="/0.7.0/">
-                0.7.0
+          <div class="buttons">
+            {% for version in page.versions %}
+              <a class="button is-small is-outlined" href="{{ site.url }}/{{ version }}/">
+                {{ version }}
               </a>
-            </div>
-            <div class="control">
-              <a class="button is-small is-outlined" href="/0.6.2/">
-                0.6.2
-              </a>
-            </div>
-            <div class="control">
-              <a class="button is-small is-outlined" href="/0.6.1/">
-                0.6.1
-              </a>
-            </div>
-            <div class="control">
-              <a class="button is-small is-outlined" href="/0.6.0/">
-                0.6.0
-              </a>
-            </div>
-            <div class="control">
-              <a class="button is-small is-outlined" href="/0.5.3/">
-                0.5.3
-              </a>
-            </div>
-            <div class="control">
-              <a class="button is-small is-outlined" href="/0.5.2/">
-                0.5.2
-              </a>
-            </div>
-            <div class="control">
-              <a class="button is-small is-outlined" href="/0.5.1/">
-                0.5.1
-              </a>
-            </div>
-            <div class="control">
-              <a class="button is-small is-outlined" href="/0.5.0/">
-                0.5.0
-              </a>
-            </div>
-            <div class="control">
-              <a class="button is-small is-outlined" href="/0.4.4/">
-                0.4.4
-              </a>
-            </div>
+            {% endfor %}
           </div>
         </div>
       </div>
@@ -85,6 +59,5 @@
         </div>
       </div>
     </section>
-    <script type="text/javascript" src="lib/main.js"></script>
   </body>
 </html>
