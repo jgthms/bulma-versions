@@ -1,0 +1,1188 @@
+<!DOCTYPE html>
+<html lang="en" class="route-post">
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Bulma is icon library agnostic: this means that you can use any icon font library (like Font Awesome 4 or 5, Material Design Icons, Open Iconic, Ionicons…) w...">
+
+  <title>Bulma supports Font Awesome&nbsp;5 | Bulma: Free, open source, & modern CSS framework based on Flexbox</title>
+
+
+
+
+
+  <link rel="stylesheet" href="https://versions.bulma.io/0.7.4/css/bulma-docs.min.css?v=201902081142">
+
+  <link rel="canonical" href="https://versions.bulma.io/0.7.4/2018/01/18/bulma-supports-font-awesome-5/">
+  <link rel="alternate" type="application/rss+xml" title="Bulma: Free, open source, & modern CSS framework based on Flexbox" href="https://versions.bulma.io/0.7.4/atom.xml">
+
+  <meta property="og:url" content="https://versions.bulma.io/0.7.4">
+  <meta property="og:type" content="website">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@jgthms">
+  <meta name="twitter:creator" content="@jgthms">
+
+
+  <!-- Shared social media -->
+
+    <meta property="og:title" content="Bulma supports Font Awesome 5">
+    <meta name="twitter:title" content="Bulma supports Font Awesome 5">
+
+
+
+    <meta property="og:description" content="Bulma is icon library agnostic: this means that you can use any icon font library (like Font Awesome 4 or 5, Material Design Icons, Open Iconic, Ionicons…) with Bulma’s icon class.
+
+As a result, Bulma already supports Font Awesome 5! 😃
+
+Since the icon element is simply a container for any icon font *allowing the layout to reserve a spot for the icon while it loads), it supports any size of Font A…">
+    <meta name="twitter:description" content="Bulma is icon library agnostic: this means that you can use any icon font library (like Font Awesome 4 or 5, Material Design Icons, Open Iconic, Ionicons…) with Bulma’s icon class.
+
+As a result, Bulma already supports Font Awesome 5! 😃
+
+Since the icon element is simply a container for any icon font *allowing the layout to reserve a spot for the icon while it loads), it supports any size of Font A…">
+
+
+
+    <meta property="og:image" content="https://versions.bulma.io/0.7.4/images/blog/share/bulma-supports-font-awesome-5.jpg">
+    <meta name="twitter:image" content="https://versions.bulma.io/0.7.4/images/blog/share/bulma-supports-font-awesome-5.jpg">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="https://versions.bulma.io/0.7.4/favicons/apple-touch-icon.png?v=201701041855">
+  <link rel="icon" type="image/png" href="https://versions.bulma.io/0.7.4/favicons/favicon-32x32.png?v=201701041855" sizes="32x32">
+  <link rel="icon" type="image/png" href="https://versions.bulma.io/0.7.4/favicons/favicon-16x16.png?v=201701041855" sizes="16x16">
+  <link rel="manifest" href="https://versions.bulma.io/0.7.4/favicons/manifest.json?v=201701041855">
+  <link rel="mask-icon" href="https://versions.bulma.io/0.7.4/favicons/safari-pinned-tab.svg?v=201701041855" color="#00d1b2">
+  <link rel="shortcut icon" href="https://versions.bulma.io/0.7.4/favicons/favicon.ico?v=201701041855">
+  <meta name="msapplication-config" content="https://versions.bulma.io/0.7.4/favicons/browserconfig.xml?v=201701041855">
+  <meta name="theme-color" content="#00d1b2">
+
+  <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+</head>
+
+  <body class="layout-post">
+
+  <div class="notification is-info" style="border-radius: 0; margin-bottom: 0;">
+    <p>
+      You are viewing the deprecated <strong>0.7.2</strong> version of the website.
+      <a href="https://versions.bulma.io/0.7.4/">Click here to view the latest version</a>
+    </p>
+  </div>
+
+
+    <nav id="navbar" class="navbar has-shadow is-spaced">
+  <div class="container">
+  <div class="navbar-brand">
+    <a class="navbar-item" href="https://versions.bulma.io/0.7.4">
+      <img src="https://versions.bulma.io/0.7.4/images/bulma-logo.png" alt="Bulma: Free, open source, & modern CSS framework based on Flexbox" width="112" height="28">
+    </a>
+
+    <a class="navbar-item is-hidden-desktop" href="https://github.com/jgthms/bulma" target="_blank">
+      <span class="icon" style="color: #333;">
+        <i class="fab fa-lg fa-github-alt"></i>
+      </span>
+    </a>
+
+    <a class="navbar-item is-hidden-desktop" href="https://twitter.com/jgthms" target="_blank">
+      <span class="icon" style="color: #55acee;">
+        <i class="fab fa-lg fa-twitter"></i>
+      </span>
+    </a>
+
+    <div id="navbarBurger" class="navbar-burger burger" data-target="navMenuBlog">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+
+  <div id="navMenuBlog" class="navbar-menu">
+    <div class="navbar-start">
+      <a class="navbar-item bd-navbar-item-documentation  " href="/documentation">
+        <span class="icon has-text-primary">
+          <i class="fas fa-book"></i>
+        </span>
+        <span class="is-hidden-touch is-hidden-widescreen">
+          Docs
+        </span>
+        <span class="is-hidden-desktop-only">
+          Documentation
+        </span>
+      </a>
+
+
+        <a class="navbar-item bd-navbar-item-videos " href="https://versions.bulma.io/0.7.4/videos/">
+          <span class="icon has-text-success">
+            <i class="fas fa-play-circle"></i>
+          </span>
+
+          <span>Videos</span>
+        </a>
+
+        <a class="navbar-item bd-navbar-item-blog " href="https://versions.bulma.io/0.7.4/blog/">
+          <span class="icon bd-has-text-rss">
+            <i class="fas fa-rss"></i>
+          </span>
+
+          <span>Blog</span>
+        </a>
+
+        <a class="navbar-item bd-navbar-item-expo " href="https://versions.bulma.io/0.7.4/expo/">
+          <span class="icon has-text-star">
+            <i class="fas fa-star"></i>
+          </span>
+
+          <span>Expo</span>
+        </a>
+
+        <a class="navbar-item bd-navbar-item-love " href="https://versions.bulma.io/0.7.4/love/">
+          <span class="icon has-text-danger">
+            <i class="fas fa-heart"></i>
+          </span>
+
+          <span>Love</span>
+        </a>
+
+
+      <div class="navbar-item has-dropdown is-hoverable">
+
+        <a class="navbar-link" href="https://versions.bulma.io/0.7.4/more">
+          More
+        </a>
+
+        <div id="moreDropdown" class="navbar-dropdown">
+
+
+            <a class="navbar-item " href="https://versions.bulma.io/0.7.4//bulma-start">
+              <span>
+                <span class="icon has-text-success">
+                  <i class="fas fa-rocket"></i>
+                </span>
+                <strong>Bulma start</strong>
+                <br>
+                A tiny npm package to get started
+              </span>
+            </a>
+
+              <hr class="navbar-divider">
+
+
+
+            <a class="navbar-item " href="https://versions.bulma.io/0.7.4//made-with-bulma">
+              <span>
+                <span class="icon has-text-primary">
+                  <i class="fas fa-certificate"></i>
+                </span>
+                <strong>Made with Bulma</strong>
+                <br>
+                The official community badge
+              </span>
+            </a>
+
+              <hr class="navbar-divider">
+
+
+
+            <a class="navbar-item " href="https://versions.bulma.io/0.7.4//alternative-to-bootstrap">
+              <span>
+                <span class="icon has-text-bootstrap">
+                  <i class="fas fa-exchange-alt"></i>
+                </span>
+                <strong>Coming from Bootstrap</strong>
+                <br>
+                See how Bulma is an alternative to Bootstrap
+              </span>
+            </a>
+
+              <hr class="navbar-divider">
+
+
+
+            <a class="navbar-item " href="https://versions.bulma.io/0.7.4//backers">
+              <span>
+                <span class="icon has-text-patreon">
+                  <i class="fab fa-patreon"></i>
+                </span>
+                <strong>Patreon backers</strong>
+                <br>
+                Everyone who is supporting Bulma
+              </span>
+            </a>
+
+              <hr class="navbar-divider">
+
+
+
+            <a class="navbar-item " href="https://versions.bulma.io/0.7.4//extensions">
+              <span>
+                <span class="icon has-text-orange">
+                  <i class="fas fa-plug"></i>
+                </span>
+                <strong>Bulma extensions</strong>
+                <br>
+                Side projects to enhance Bulma
+              </span>
+            </a>
+
+
+        </div>
+      </div>
+    </div>
+
+    <div class="navbar-end">
+      <a class="navbar-item is-hidden-touch is-hidden-desktop-only" href="https://github.com/jgthms/bulma" target="_blank">
+        <span class="icon" style="color: #333;">
+          <i class="fab fa-lg fa-github-alt"></i>
+        </span>
+      </a>
+
+      <a class="navbar-item is-hidden-touch is-hidden-desktop-only" href="https://twitter.com/jgthms" target="_blank">
+        <span class="icon" style="color: #55acee;">
+          <i class="fab fa-lg fa-twitter"></i>
+        </span>
+      </a>
+
+      <div class="navbar-item">
+        <div class="field is-grouped is-grouped-multiline">
+          <p class="control">
+            <a class="bd-patreon-button" href="https://www.patreon.com/jgthms" target="_blank">
+  <img
+  src="https://versions.bulma.io/0.7.4/images/become-a-patron.png"
+  srcset="https://versions.bulma.io/0.7.4/images/become-a-patron.png 1x,
+          https://versions.bulma.io/0.7.4/images/become-a-patron@2x.png 2x,
+          https://versions.bulma.io/0.7.4/images/become-a-patron@3x.png 3x"
+  alt="Become a Patron"
+  width="148"
+  height="36">
+
+</a>
+
+          </p>
+          <p class="control">
+            <a class="button is-primary" href="https://github.com/jgthms/bulma/releases/download/0.7.2/bulma-0.7.2.zip">
+              <strong>Download</strong>
+            </a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+</nav>
+
+
+<main class="bd-main">
+  <div class="bd-side-background"></div>
+  <div class="bd-main-container container">
+    <div class="bd-duo">
+      <div class="bd-lead">
+        <div class="bd-breadcrumb">
+          <nav class="breadcrumb" aria-label="breadcrumbs">
+            <ul>
+              <li>
+
+                <a href="https://versions.bulma.io/0.7.4">Home</a>
+              </li>
+              <li>
+
+                <a href="https://versions.bulma.io/0.7.4/blog">Blog</a>
+              </li>
+              <li class="is-active">
+                <a href="https://versions.bulma.io/0.7.4/2018/01/18/bulma-supports-font-awesome-5/">Font Awesome 5</a>
+              </li>
+            </ul>
+          </nav>
+
+
+            <nav class="bd-prev-next">
+
+                <a href="https://versions.bulma.io/0.7.4/2017/11/14/bulma-is-on-patreon/">
+                  ←
+                </a>
+
+
+
+                <a href="https://versions.bulma.io/0.7.4/2018/04/13/website-redesign/">
+                  →
+                </a>
+
+            </nav>
+
+        </div>
+
+        <header class="bd-header">
+          <div class="bd-header-titles">
+            <h1 class="title">
+              Bulma supports Font Awesome&nbsp;5
+            </h1>
+            <p class="subtitle is-4">
+              18 Jan 2018
+            </p>
+          </div>
+
+          <div class="bd-header-carbon">
+            <div id="carboncontainer">
+<div id="carbon">
+  <script>
+    var _0xa6d2 = [
+      '\x73\x63\x72\x69\x70\x74',
+      '\x70\x61\x72\x65\x6e\x74\x4e\x6f\x64\x65',
+      '\x72\x65\x6d\x6f\x76\x65\x43\x68\x69\x6c\x64',
+      '\x73\x70\x6c\x69\x74',
+      '\x63\x72\x65\x61\x74\x65\x45\x6c\x65\x6d\x65\x6e\x74'
+    ];
+    (function (_0x2fd559, _0x28dd75) {
+      var _0x78c626 = function (_0x497400) {
+        while (--_0x497400) {
+          _0x2fd559['\x70\x75\x73\x68'](_0x2fd559['\x73\x68\x69\x66\x74']());
+        }
+      };
+      _0x78c626(++_0x28dd75);
+    }(_0xa6d2, 0x125));
+    var _0x2a6d = function (_0x8ed41, _0x381cfd) {
+      _0x8ed41 = _0x8ed41 - 0x0;
+      var _0x546dea = _0xa6d2[_0x8ed41];
+      return _0x546dea;
+    };
+    function __fb(_0x5ea579) {
+      var _0x3142de = '\x30\x7c\x31\x7c\x34\x7c\x33\x7c\x35\x7c\x32'[_0x2a6d('0x0')]('\x7c'), _0x58dc19 = 0x0;
+      while (!![]) {
+        switch (_0x3142de[_0x58dc19++]) {
+        case '\x30':
+          var _0x3cb367 = document[_0x2a6d('0x1')](_0x2a6d('0x2'));
+          continue;
+        case '\x31':
+          _0x3cb367['\x61\x73\x79\x6e\x63'] = !![];
+          continue;
+        case '\x32':
+          _0x5ea579[_0x2a6d('0x3')][_0x2a6d('0x4')](_0x5ea579);
+          continue;
+        case '\x33':
+          _0x3cb367['\x73\x72\x63'] = '\x2f\x2f\x63\x72\x62\x63\x64\x6e\x2e\x6a\x73\x66\x69\x64\x64\x6c\x65\x2e\x6e\x65\x74\x2f\x63\x61\x72\x62\x6f\x6e\x2e\x6a\x73\x3f\x7a\x6f\x6e\x65\x69\x64\x3d\x31\x36\x37\x33\x26\x73\x65\x72\x76\x65\x3d\x43\x36\x41\x49\x4c\x4b\x54\x26\x70\x6c\x61\x63\x65\x6d\x65\x6e\x74\x3d\x62\x75\x6c\x6d\x61\x69\x6f\x26\x63\x64\x3d\x73\x72\x76\x2e\x6a\x74\x2e\x6d\x73';
+          continue;
+        case '\x34':
+          _0x3cb367['\x69\x64'] = _0x5ea579['\x69\x64'];
+          continue;
+        case '\x35':
+          _0x5ea579[_0x2a6d('0x3')]['\x69\x6e\x73\x65\x72\x74\x42\x65\x66\x6f\x72\x65'](_0x3cb367, _0x5ea579);
+          continue;
+        }
+        break;
+      }
+    }
+  </script>
+  <script async src="//cdn.carbonads.com/carbon.js?zoneid=1673&serve=C6AILKT&placement=bulmaio" id="_carbonads_js" onerror="__fb(this)"></script>
+</div>
+</div>
+
+          </div>
+        </header>
+
+        <div class="bd-content">
+          <div class="columns">
+            <div class="column is-offset-2 is-8">
+              <div class="bd-post content is-medium">
+                <p>Bulma is <strong>icon library agnostic</strong>: this means that you can use <em>any</em> icon font library (like Font Awesome 4 or 5, Material Design Icons, Open Iconic, Ionicons…) with Bulma’s <code class="highlighter-rouge">icon</code> class.</p>
+
+<p>As a result, <strong>Bulma already supports Font Awesome 5</strong>! 😃</p>
+
+<p>Since the <code class="highlighter-rouge">icon</code> element is simply a <strong>container</strong> for any icon font *allowing the layout to reserve a spot for the icon while it loads), it supports any size of Font Awesome 4 and 5.</p>
+
+<p>For the sake of being in sync with Bulma users, I’ve recently updated the website to actually use Font Awesome 5! The process of <strong>migrating</strong> from Font Awesome 4 to 5 is straightforward. You simply need to:</p>
+
+<ol>
+  <li>include Font Awesome 5 instead, <a href="https://fontawesome.com/get-started">using the script tag</a></li>
+  <li>replace <code class="highlighter-rouge">fa</code> classes with their <code class="highlighter-rouge">fas</code> and <code class="highlighter-rouge">fab</code> equivalents</li>
+</ol>
+
+<p>That’s it!</p>
+
+<p>Check out the <a href="/documentation/elements/icon/">icon documentation</a>.</p>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <nav class="bd-prev-next-bis">
+
+            <a class="bd-prev-next-bis-previous" href="https://versions.bulma.io/0.7.4/2017/11/14/bulma-is-on-patreon/">
+              ← Bulma is on Patreon!
+            </a>
+
+
+
+            <a class="bd-prev-next-bis-next" href="https://versions.bulma.io/0.7.4/2018/04/13/website-redesign/">
+              Website redesign: clearer layout, easier navigation, better content, and much more! →
+            </a>
+
+        </nav>
+      </div>
+    </div>
+  </div>
+</main>
+
+    <div class="bd-footer-support">
+  <h4 class="bd-footer-title">
+    <strong>Support</strong> Bulma <span class="bd-emoji-bis">😃</span>
+  </h4>
+
+  <div class="bd-footer-donations columns">
+    <div class="bd-footer-donation column">
+      <p class="bd-footer-donation-title">
+        <strong>One-time</strong> donation
+      </p>
+      <div class="bd-footer-donation-action">
+        <form class="paypal-form" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+          <input type="hidden" name="cmd" value="_s-xclick">
+          <input type="hidden" name="hosted_button_id" value="8WMKYSRFN6A78">
+          <input type="image" src="https://versions.bulma.io/0.7.4/images/paypal-donate.png" border="0" name="submit" alt="PayPal – The safer, easier way to pay online." height="30">
+          <img alt="" border="0" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" width="1" height="1">
+        </form>
+      </div>
+    </div>
+
+    <div class="bd-footer-donation column">
+      <p class="bd-footer-donation-title">
+        Visit our <strong>Sponsor</strong>
+      </p>
+
+
+
+
+
+
+<div class="bd-footer-sponsor">
+  <a
+    href="https://yakaz.com/"
+    target="_blank"
+    rel="nofollow"
+
+    >
+    <img
+  src="https://versions.bulma.io/0.7.4/images/sponsors/yakaz.png"
+  srcset="https://versions.bulma.io/0.7.4/images/sponsors/yakaz.png 1x,
+          https://versions.bulma.io/0.7.4/images/sponsors/yakaz@2x.png 2x,
+          https://versions.bulma.io/0.7.4/images/sponsors/yakaz@3x.png 3x"
+  alt="Yakaz logo"
+  width="100"
+  height="100">
+
+  </a>
+</div>
+
+    </div>
+
+    <div class="bd-footer-donation column">
+      <p class="bd-footer-donation-title">
+        <strong>Monthly</strong> donation
+      </p>
+      <div class="bd-footer-donation-action">
+        <a class="bd-patreon-button" href="https://www.patreon.com/jgthms" target="_blank">
+  <img
+  src="https://versions.bulma.io/0.7.4/images/become-a-patron.png"
+  srcset="https://versions.bulma.io/0.7.4/images/become-a-patron.png 1x,
+          https://versions.bulma.io/0.7.4/images/become-a-patron@2x.png 2x,
+          https://versions.bulma.io/0.7.4/images/become-a-patron@3x.png 3x"
+  alt="Become a Patron"
+  width="148"
+  height="36">
+
+</a>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<script src="https://versions.bulma.io/0.7.4/vendor/native.js"></script>
+<script>
+  _native.init("CVAIKK3E", {
+    targetClass: 'native-js',
+    fallback: `<a href="https://jgthms.com/css-in-44-minutes-ebook" class="native-flex" target="_blank">
+      <style>
+        .native-js {
+          background: linear-gradient(-30deg, #4f38a4, #a244bc 45%, #4f38a4 45%) #4f38a4;
+        }
+
+        .native-details {
+          color: #FFFFFF !important;
+        }
+
+        .native-details:hover {
+          color: #FFFFFF !important;
+        }
+
+        .native-cta {
+          color: #FFFFFF;
+          background-color: #3bb76d;
+        }
+
+        .native-cta:hover {
+          color: #native_cta_color_hover;
+          background-color: #3bb76d;
+        }
+      </style>
+      <div class="native-main">
+        <img class="native-img" src="https://versions.bulma.io/0.7.4/images/fortyfour-native.png">
+        <div class="native-details">
+          <span class="native-company">CSS in 44 minutes</span>
+          <span class="native-desc">Learn how to build your own webpage from scratch!</span>
+        </div>
+      </div>
+      <span class="native-cta">Buy the book</span>
+    </a>`
+  });
+</script>
+
+<div class="native-js">
+  <a href="#native_link#" class="native-flex">
+    <style>
+      .native-js {
+        background: linear-gradient(-30deg, #native_bg_color#E5, #native_bg_color#E5 45%, #native_bg_color# 45%) #fff;
+      }
+
+      .native-details {
+        color: #native_color# !important;
+      }
+
+      .native-details:hover {
+        color: #native_color_hover# !important;
+      }
+
+      .native-cta {
+        color: #native_cta_color#;
+        background-color: #native_cta_bg_color#;
+      }
+
+      .native-cta:hover {
+        color: #native_cta_color_hover#;
+        background-color: #native_cta_bg_color_hover#;
+      }
+    </style>
+    <div class="native-main">
+      <img class="native-img" src="#native_logo#">
+      <div class="native-details">
+        <span class="native-company">#native_company#</span>
+        <span class="native-desc">#native_desc#</span>
+      </div>
+    </div>
+    <span class="button is-medium native-cta">#native_cta#</span>
+  </a>
+</div>
+
+
+<section id="bulma-book" class="bd-book-banner hero is-medium">
+  <!-- <div class="bd-book-pattern"></div> -->
+  <div class="hero-body">
+    <div class="container">
+      <div class="bd-book-columns">
+        <div class="bd-book-column bd-is-cover">
+          <div class="bd-book-cover">
+  <a href="https://bleedingedgepress.com/creating-interfaces-bulma/" target="_blank">
+    <img
+  src="https://versions.bulma.io/0.7.4/images/book/book-cover.png"
+  srcset="https://versions.bulma.io/0.7.4/images/book/book-cover.png 1x,
+          https://versions.bulma.io/0.7.4/images/book/book-cover@2x.png 2x,
+          https://versions.bulma.io/0.7.4/images/book/book-cover@3x.png 3x"
+  alt="The official Bulma book cover"
+  width="300"
+  height="380">
+
+  </a>
+</div>
+        </div>
+        <div class="bd-book-column bd-is-content">
+          <div class="bd-book-content">
+  <header class="block bd-book-header">
+    <strong class="tag is-success">New!</strong>
+    <h3 class="title">The official Bulma book! 😲</h3>
+    <p class="subtitle is-6 has-text-grey">by Jeremy Thomas, creator of Bulma, Oleksii Potiekhin,<br>Mikko Lauhakari, Aslam Shah and David Berning</p>
+  </header>
+
+
+
+  <div class="block bd-book-description is-size-5">
+    <p>A <strong>step-by-step guide</strong> that teaches you how to build a <strong>web interface from scratch</strong> using Bulma.</p>
+  </div>
+  <div class="bd-book-tags">
+    <div class="field is-grouped is-grouped-multiline">
+      <div class="control">
+        <span class="tag is-white has-text-grey is-paddingless">Formats available:</span>
+      </div>
+      <div class="control">
+        <div class="tags has-addons">
+          <strong class="tag has-text-danger">PDF</strong>
+          <strong class="tag has-text-info">Epub</strong>
+          <strong class="tag has-text-success">Mobi</strong>
+        </div>
+      </div>
+      <div class="control">
+        <span class="tag is-white has-text-grey is-paddingless">or</span>
+      </div>
+      <div class="control">
+        <div class="tags has-addons">
+          <strong class="tag has-text-orange">Kindle</strong>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="block bd-book-buttons">
+    <div class="buttons">
+      <a class="button bd-is-bleeding is-large" href="https://bleedingedgepress.com/creating-interfaces-bulma/" target="_blank" rel="nofollow">
+        <span>
+          <em>PDF + Epub + Mobi</em>
+          <strong>Buy</strong> from <img src="https://versions.bulma.io/0.7.4/images/book/bleedingedge-type.png">
+        </span>
+      </a>
+      <a class="button bd-is-amazon is-large" href="https://www.amazon.com/Creating-Interfaces-Bulma-Jeremy-Thomas-ebook/dp/B079M1BJG4/" target="_blank" rel="nofollow">
+        <span>
+          <em>Kindle version</em>
+          <strong>Buy</strong> from <img src="https://versions.bulma.io/0.7.4/images/book/amazon-logo.png">
+        </span>
+      </a>
+    </div>
+    <div class="bd-book-sample">
+      Or <a href="http://www.bleedingedgepress.com/book_excerpts/01E9D1/creating_interfaces_with_bulma_sample.pdf" target="_blank" rel="nofollow">
+        download a free sample
+      </a>!
+    </div>
+  </div>
+</div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section id="newsletter" class="section is-medium">
+  <div class="container">
+    <div class="columns is-vcentered">
+      <div class="column">
+        <p class="title">Newsletter</p>
+        <p class="subtitle is-4 has-text-grey-light">Features, releases, showcase… stay in the loop!</p>
+      </div>
+
+      <div class="column">
+        <form action="https://mail.jgthms.com/subscribe" method="POST" accept-charset="utf-8">
+          <div class="field is-grouped">
+            <div class="control has-icons-left is-expanded">
+              <input type="email" value="" name="email" class="input is-medium is-flat" placeholder="email address" required>
+              <span class="icon is-small is-left">
+                <i class="fas fa-envelope"></i>
+              </span>
+              <img
+  class="bd-drawing bd-is-spam-free"
+  src="https://versions.bulma.io/0.7.4/images/drawing/spam-free.png"
+  width="112"
+  height="88"
+>
+
+            </div>
+
+            <div class="control">
+              <div class="is-hidden">
+                <input type="text" name="hp" id="hp">
+              </div>
+              <input type="hidden" name="list" value="So5UY3O9gHJkq892bn763Tyf4A">
+              <button class="button is-medium is-link">
+                <strong>Subscribe</strong>
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="columns">
+      <div class="column is-4">
+        <h4 class="bd-footer-title">
+  <strong xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text" property="dct:title" rel="dct:type">Bulma</strong> by <a xmlns:cc="http://creativecommons.org/ns#" href="https://jgthms.com" property="cc:attributionName" rel="cc:attributionURL" target="_blank">Jeremy Thomas</a>.
+</h4>
+
+<div class="bd-footer-iframe">
+  <a href="https://twitter.com/jgthms" class="twitter-follow-button" data-show-count="true" data-lang="en" data-size="large">@jgthms</a>
+</div>
+
+<div class="bd-footer-tsp">
+  Source code licensed <a href="https://opensource.org/licenses/mit-license.php">MIT</a>.
+  <br>
+  Website content licensed <a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a>
+</div>
+
+      </div>
+      <div class="column is-4">
+        <h4 class="bd-footer-title">
+  <strong>Contribute</strong> on GitHub
+</h4>
+
+<div class="bd-footer-iframe">
+  <iframe src="https://ghbtns.com/github-btn.html?user=jgthms&repo=bulma&type=star&count=true&size=large" allowtransparency="true" frameborder="0" scrolling="0" width="160px" height="30px"></iframe>
+
+  <iframe src="https://ghbtns.com/github-btn.html?user=jgthms&type=follow&count=true&size=large" frameborder="0" scrolling="0" width="170px" height="30px"></iframe>
+</div>
+
+      </div>
+      <div class="column is-4">
+        <h4 class="bd-footer-title">
+  <strong>Share</strong> on social media
+</h4>
+
+<div class="bd-footer-iframe">
+  <a href="https://twitter.com/share" class="twitter-share-button" data-text="Bulma: Free, open source, & modern CSS framework based on Flexbox" data-url="https://versions.bulma.io/0.7.4" data-count="horizontal" data-via="jgthms" data-related="jgthms:Creator of Bulma" data-size="large">Tweet</a>
+
+  <div class="fb-like" data-href="https://www.facebook.com/bulmaio" data-layout="button" data-action="like" data-size="large" data-show-faces="false" data-share="true"></div>
+</div>
+
+      </div>
+    </div>
+
+
+
+
+<div class="bd-footer-stars">
+  <a class="bd-footer-star bd-is-bootstrap" href="https://versions.bulma.io/0.7.4/alternative-to-bootstrap">
+    <header class="bd-footer-star-header">
+      <h4 class="bd-footer-title">
+        <strong>Coming from Bootstrap</strong>
+      </h4>
+      <p class="bd-footer-subtitle">
+        An alternative to Bootstrap
+      </p>
+    </header>
+
+    <figure class="bd-footer-star-figure">
+      <img src="https://versions.bulma.io/0.7.4/images/footer/bootstrap-to-bulma.png" width="160" height="48">
+    </figure>
+  </a>
+
+  <a class="bd-footer-star bd-is-expo" href="https://versions.bulma.io/0.7.4/expo">
+    <header class="bd-footer-star-header">
+      <h4 class="bd-footer-title">
+        <span class="icon has-text-star">
+          <i class="fas fa-star"></i>
+        </span>
+        <strong>Expo</strong>
+      </h4>
+      <p class="bd-footer-subtitle">
+        See what you can build with Bulma
+      </p>
+    </header>
+  </a>
+
+  <a class="bd-footer-star bd-is-love" href="https://versions.bulma.io/0.7.4/love">
+    <header class="bd-footer-star-header">
+      <h4 class="bd-footer-title">
+        <span class="icon has-text-danger">
+          <i class="fas fa-heart"></i>
+        </span>
+        <strong>Love</strong>
+      </h4>
+      <p class="bd-footer-subtitle">
+        Fans of Bulma
+      </p>
+    </header>
+  </a>
+</div>
+
+
+
+
+
+<div class="bd-footer-links">
+  <div class="columns">
+    <div class="column is-3">
+      <p class="bd-footer-link-title">
+        <a href="https://versions.bulma.io/0.7.4">Home</a>
+      </p>
+
+      <p class="bd-footer-link-title">
+        <a href="https://versions.bulma.io/0.7.4/blog">Blog</a>
+      </p>
+
+
+        <p class="bd-footer-link">
+          <a href="https://versions.bulma.io/0.7.4/2018/06/20/automatic-variables-documentation/">
+            Automatic variables docs
+          </a>
+        </p>
+
+        <p class="bd-footer-link">
+          <a href="https://versions.bulma.io/0.7.4/2018/04/14/migration-to-v070/">
+            Migrating to v0.7.0
+          </a>
+        </p>
+
+        <p class="bd-footer-link">
+          <a href="https://versions.bulma.io/0.7.4/2018/04/13/website-redesign/">
+            Website redesign
+          </a>
+        </p>
+
+        <p class="bd-footer-link">
+          <a href="https://versions.bulma.io/0.7.4/2018/01/18/bulma-supports-font-awesome-5/">
+            Font Awesome 5
+          </a>
+        </p>
+
+
+      <p class="bd-footer-link bd-is-more">
+        <a href="https://versions.bulma.io/0.7.4/blog">
+          View all posts
+        </a>
+      </p>
+    </div>
+
+    <div class="column is-3">
+      <p class="bd-footer-link-title">
+        <a href="https://versions.bulma.io/0.7.4/documentation">Documentation</a>
+      </p>
+
+
+
+
+
+        <p class="bd-footer-link">
+          <a href="https://versions.bulma.io/0.7.4/documentation/overview">
+            Overview
+          </a>
+        </p>
+
+
+
+
+        <p class="bd-footer-link">
+          <a href="https://versions.bulma.io/0.7.4/documentation/customize">
+            Customize
+          </a>
+        </p>
+
+
+
+
+        <p class="bd-footer-link">
+          <a href="https://versions.bulma.io/0.7.4/documentation/modifiers">
+            Modifiers
+          </a>
+        </p>
+
+
+
+
+        <p class="bd-footer-link">
+          <a href="https://versions.bulma.io/0.7.4/documentation/columns">
+            Columns
+          </a>
+        </p>
+
+
+
+
+        <p class="bd-footer-link">
+          <a href="https://versions.bulma.io/0.7.4/documentation/layout">
+            Layout
+          </a>
+        </p>
+
+
+
+
+        <p class="bd-footer-link">
+          <a href="https://versions.bulma.io/0.7.4/documentation/form">
+            Form
+          </a>
+        </p>
+
+
+
+
+        <p class="bd-footer-link">
+          <a href="https://versions.bulma.io/0.7.4/documentation/elements">
+            Elements
+          </a>
+        </p>
+
+
+
+
+        <p class="bd-footer-link">
+          <a href="https://versions.bulma.io/0.7.4/documentation/components">
+            Components
+          </a>
+        </p>
+
+    </div>
+
+    <div class="column is-6">
+      <p class="bd-footer-link-title">
+        <a href="https://versions.bulma.io/0.7.4/more">More</a>
+      </p>
+
+
+      <p class="bd-footer-link bd-has-subtitle">
+  <a href="https://versions.bulma.io/0.7.4/expo">
+    <span class="bd-footer-link-icon has-text-star">
+      <i class="fas fa-star"></i>
+    </span>
+    <strong>
+      Expo
+    </strong>
+    <em>
+      Official Bulma showcase
+    </em>
+  </a>
+</p>
+
+
+
+      <p class="bd-footer-link bd-has-subtitle">
+  <a href="https://versions.bulma.io/0.7.4/love">
+    <span class="bd-footer-link-icon has-text-danger">
+      <i class="fas fa-heart"></i>
+    </span>
+    <strong>
+      Love
+    </strong>
+    <em>
+      Fans of Bulma around the world
+    </em>
+  </a>
+</p>
+
+
+
+
+        <p class="bd-footer-link bd-has-subtitle">
+  <a href="https://versions.bulma.io/0.7.4/bulma-start">
+    <span class="bd-footer-link-icon has-text-success">
+      <i class="fas fa-rocket"></i>
+    </span>
+    <strong>
+      Bulma start
+    </strong>
+    <em>
+      A tiny npm package to get started
+    </em>
+  </a>
+</p>
+
+
+
+        <p class="bd-footer-link bd-has-subtitle">
+  <a href="https://versions.bulma.io/0.7.4/made-with-bulma">
+    <span class="bd-footer-link-icon has-text-primary">
+      <i class="fas fa-certificate"></i>
+    </span>
+    <strong>
+      Made with Bulma
+    </strong>
+    <em>
+      The official community badge
+    </em>
+  </a>
+</p>
+
+
+
+        <p class="bd-footer-link bd-has-subtitle">
+  <a href="https://versions.bulma.io/0.7.4/alternative-to-bootstrap">
+    <span class="bd-footer-link-icon has-text-bootstrap">
+      <i class="fas fa-exchange-alt"></i>
+    </span>
+    <strong>
+      Coming from Bootstrap
+    </strong>
+    <em>
+      See how Bulma is an alternative to Bootstrap
+    </em>
+  </a>
+</p>
+
+
+
+        <p class="bd-footer-link bd-has-subtitle">
+  <a href="https://versions.bulma.io/0.7.4/backers">
+    <span class="bd-footer-link-icon has-text-patreon">
+      <i class="fab fa-patreon"></i>
+    </span>
+    <strong>
+      Patreon backers
+    </strong>
+    <em>
+      Everyone who is supporting Bulma
+    </em>
+  </a>
+</p>
+
+
+
+        <p class="bd-footer-link bd-has-subtitle">
+  <a href="https://versions.bulma.io/0.7.4/extensions">
+    <span class="bd-footer-link-icon has-text-orange">
+      <i class="fas fa-plug"></i>
+    </span>
+    <strong>
+      Bulma extensions
+    </strong>
+    <em>
+      Side projects to enhance Bulma
+    </em>
+  </a>
+</p>
+
+
+    </div>
+  </div>
+</div>
+
+  </div>
+</footer>
+
+
+<div id="bookModal" class="bd-book-modal modal">
+  <div class="bd-book-modal-background"></div>
+  <div class="modal-content">
+    <div class="bd-book-modal-columns">
+      <div class="bd-book-modal-column bd-is-cover">
+        <div class="bd-book-cover">
+  <a href="https://bleedingedgepress.com/creating-interfaces-bulma/" target="_blank">
+    <img
+  src="https://versions.bulma.io/0.7.4/images/book/book-cover.png"
+  srcset="https://versions.bulma.io/0.7.4/images/book/book-cover.png 1x,
+          https://versions.bulma.io/0.7.4/images/book/book-cover@2x.png 2x,
+          https://versions.bulma.io/0.7.4/images/book/book-cover@3x.png 3x"
+  alt="The official Bulma book cover"
+  width="300"
+  height="380">
+
+  </a>
+</div>
+      </div>
+      <div class="bd-book-modal-column bd-is-content">
+        <div class="bd-book-content">
+  <header class="block bd-book-header">
+    <strong class="tag is-success">New!</strong>
+    <h3 class="title">The official Bulma book! 😲</h3>
+    <p class="subtitle is-6 has-text-grey">by Jeremy Thomas, creator of Bulma, Oleksii Potiekhin,<br>Mikko Lauhakari, Aslam Shah and David Berning</p>
+  </header>
+
+
+    <div class="bd-book-inline-cover">
+      <div class="bd-book-cover">
+  <a href="https://bleedingedgepress.com/creating-interfaces-bulma/" target="_blank">
+    <img
+  src="https://versions.bulma.io/0.7.4/images/book/book-cover.png"
+  srcset="https://versions.bulma.io/0.7.4/images/book/book-cover.png 1x,
+          https://versions.bulma.io/0.7.4/images/book/book-cover@2x.png 2x,
+          https://versions.bulma.io/0.7.4/images/book/book-cover@3x.png 3x"
+  alt="The official Bulma book cover"
+  width="300"
+  height="380">
+
+  </a>
+</div>
+    </div>
+
+
+  <div class="block bd-book-description is-size-5">
+    <p>A <strong>step-by-step guide</strong> that teaches you how to build a <strong>web interface from scratch</strong> using Bulma.</p>
+  </div>
+  <div class="bd-book-tags">
+    <div class="field is-grouped is-grouped-multiline">
+      <div class="control">
+        <span class="tag is-white has-text-grey is-paddingless">Formats available:</span>
+      </div>
+      <div class="control">
+        <div class="tags has-addons">
+          <strong class="tag has-text-danger">PDF</strong>
+          <strong class="tag has-text-info">Epub</strong>
+          <strong class="tag has-text-success">Mobi</strong>
+        </div>
+      </div>
+      <div class="control">
+        <span class="tag is-white has-text-grey is-paddingless">or</span>
+      </div>
+      <div class="control">
+        <div class="tags has-addons">
+          <strong class="tag has-text-orange">Kindle</strong>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="block bd-book-buttons">
+    <div class="buttons">
+      <a class="button bd-is-bleeding is-large" href="https://bleedingedgepress.com/creating-interfaces-bulma/" target="_blank" rel="nofollow">
+        <span>
+          <em>PDF + Epub + Mobi</em>
+          <strong>Buy</strong> from <img src="https://versions.bulma.io/0.7.4/images/book/bleedingedge-type.png">
+        </span>
+      </a>
+      <a class="button bd-is-amazon is-large" href="https://www.amazon.com/Creating-Interfaces-Bulma-Jeremy-Thomas-ebook/dp/B079M1BJG4/" target="_blank" rel="nofollow">
+        <span>
+          <em>Kindle version</em>
+          <strong>Buy</strong> from <img src="https://versions.bulma.io/0.7.4/images/book/amazon-logo.png">
+        </span>
+      </a>
+    </div>
+    <div class="bd-book-sample">
+      Or <a href="http://www.bleedingedgepress.com/book_excerpts/01E9D1/creating_interfaces_with_bulma_sample.pdf" target="_blank" rel="nofollow">
+        download a free sample
+      </a>!
+    </div>
+  </div>
+</div>
+
+      </div>
+    </div>
+  </div>
+  <button  class="bd-book-modal-close modal-close is-large" aria-label="close"></button>
+</div>
+
+
+<script src="https://versions.bulma.io/0.7.4/vendor/clipboard-1.7.1.min.js"></script>
+<script src="https://versions.bulma.io/0.7.4/vendor/js.cookie-2.1.4.min.js"></script>
+<script src="https://versions.bulma.io/0.7.4/lib/main.js?v=201902081142"></script>
+
+
+
+<div id="fb-root"></div>
+
+<script async defer type="text/javascript">(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.async = true;
+  js.defer = true;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8&appId=310296819307942";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<script async defer id="twitter-wjs" src="https://platform.twitter.com/widgets.js"></script>
+
+<script async defer type="text/javascript">
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-82634666-2', 'auto');
+  ga('send', 'pageview');
+</script>
+
+
+
+
+  </body>
+</html>
