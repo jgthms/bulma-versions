@@ -10,11 +10,11 @@
       <name>Bulma: a modern CSS framework based on Flexbox</name>
       <email>bbxdesign@gmail.com</email>
     </author>
-    <atom:link href="http://localhost:4000/atom.xml" rel="self" type="application/rss+xml" />
-    
+    <atom:link href="https://versions.bulma.io/0.7.2/atom.xml" rel="self" type="application/rss+xml" />
+
       <item>
         <title>Automatic variables documentation</title>
-        
+
         <description>&lt;p&gt;Bulma is highly customizable because there are &lt;strong&gt;415 Sass variables&lt;/strong&gt; across &lt;strong&gt;28 files&lt;/strong&gt;.&lt;/p&gt;
 
 &lt;p&gt;More and more CSS values are transformed into Sass variables for easy customization. And each new Bulma feature is required to come with its own set of variables.&lt;/p&gt;
@@ -32,13 +32,13 @@
 &lt;/figure&gt;
 </description>
         <pubDate>Wed, 20 Jun 2018 00:00:00 +0100</pubDate>
-        <link>http://localhost:4000/2018/06/20/automatic-variables-documentation/</link>
-        <guid isPermaLink="true">http://localhost:4000/2018/06/20/automatic-variables-documentation/</guid>
+        <link>https://versions.bulma.io/0.7.2/2018/06/20/automatic-variables-documentation/</link>
+        <guid isPermaLink="true">https://versions.bulma.io/0.7.2/2018/06/20/automatic-variables-documentation/</guid>
       </item>
-    
+
       <item>
         <title>Migrating to v0.7.0</title>
-        
+
         <description>&lt;p&gt;A new major Bulma update is out: &lt;a href=&quot;#&quot;&gt;v0.7.0&lt;/a&gt;!&lt;/p&gt;
 
 &lt;p&gt;While this update is mainly focused on a massive &lt;a href=&quot;/2018/04/13/website-redesign/&quot;&gt;website redesign&lt;/a&gt;, it also includes a few bug fixes, some new features, and some variable changes.&lt;/p&gt;
@@ -69,7 +69,7 @@
         &lt;th&gt;From&lt;/th&gt;
         &lt;th&gt;To&lt;/th&gt;
       &lt;/tr&gt;
-      
+
         &lt;tr&gt;
           &lt;td&gt;
             &lt;code&gt;$gap&lt;/code&gt;
@@ -81,7 +81,7 @@
             &lt;code&gt;64px&lt;/code&gt;
           &lt;/td&gt;
         &lt;/tr&gt;
-      
+
         &lt;tr&gt;
           &lt;td&gt;
             &lt;code&gt;$radius&lt;/code&gt;
@@ -93,7 +93,7 @@
             &lt;code&gt;4px&lt;/code&gt;
           &lt;/td&gt;
         &lt;/tr&gt;
-      
+
         &lt;tr&gt;
           &lt;td&gt;
             &lt;code&gt;$radius-large&lt;/code&gt;
@@ -105,7 +105,7 @@
             &lt;code&gt;6px&lt;/code&gt;
           &lt;/td&gt;
         &lt;/tr&gt;
-      
+
     &lt;/tbody&gt;
   &lt;/table&gt;
 
@@ -122,7 +122,7 @@
         &lt;th&gt;From&lt;/th&gt;
         &lt;th&gt;To&lt;/th&gt;
       &lt;/tr&gt;
-      
+
         &lt;tr&gt;
           &lt;td&gt;
             &lt;code&gt;$hr-background-color&lt;/code&gt;
@@ -134,7 +134,7 @@
             &lt;code&gt;$background&lt;/code&gt;
           &lt;/td&gt;
         &lt;/tr&gt;
-      
+
         &lt;tr&gt;
           &lt;td&gt;
             &lt;code&gt;$hr-height&lt;/code&gt;
@@ -146,7 +146,7 @@
             &lt;code&gt;2px&lt;/code&gt;
           &lt;/td&gt;
         &lt;/tr&gt;
-      
+
     &lt;/tbody&gt;
   &lt;/table&gt;
 
@@ -163,7 +163,7 @@
         &lt;th&gt;From&lt;/th&gt;
         &lt;th&gt;To&lt;/th&gt;
       &lt;/tr&gt;
-      
+
         &lt;tr&gt;
           &lt;td&gt;
             &lt;code&gt;$content-heading-weight&lt;/code&gt;
@@ -175,7 +175,7 @@
             &lt;code&gt;$weight-semibold&lt;/code&gt;
           &lt;/td&gt;
         &lt;/tr&gt;
-      
+
     &lt;/tbody&gt;
   &lt;/table&gt;
 
@@ -192,7 +192,7 @@
         &lt;th&gt;From&lt;/th&gt;
         &lt;th&gt;To&lt;/th&gt;
       &lt;/tr&gt;
-      
+
         &lt;tr&gt;
           &lt;td&gt;
             &lt;code&gt;$message-header-padding&lt;/code&gt;
@@ -204,7 +204,7 @@
             &lt;code&gt;0.75em 1em&lt;/code&gt;
           &lt;/td&gt;
         &lt;/tr&gt;
-      
+
         &lt;tr&gt;
           &lt;td&gt;
             &lt;code&gt;$message-body-padding&lt;/code&gt;
@@ -216,7 +216,7 @@
             &lt;code&gt;1.25em 1.5em&lt;/code&gt;
           &lt;/td&gt;
         &lt;/tr&gt;
-      
+
     &lt;/tbody&gt;
   &lt;/table&gt;
 
@@ -233,7 +233,7 @@
         &lt;th&gt;From&lt;/th&gt;
         &lt;th&gt;To&lt;/th&gt;
       &lt;/tr&gt;
-      
+
         &lt;tr&gt;
           &lt;td&gt;
             &lt;code&gt;$navbar-item-hover-background-color&lt;/code&gt;
@@ -245,7 +245,7 @@
             &lt;code&gt;$white-bis&lt;/code&gt;
           &lt;/td&gt;
         &lt;/tr&gt;
-      
+
         &lt;tr&gt;
           &lt;td&gt;
             &lt;code&gt;$navbar-dropdown-border-top&lt;/code&gt;
@@ -257,7 +257,7 @@
             &lt;code&gt;2px solid $border&lt;/code&gt;
           &lt;/td&gt;
         &lt;/tr&gt;
-      
+
         &lt;tr&gt;
           &lt;td&gt;
             &lt;code&gt;$navbar-divider-background-color&lt;/code&gt;
@@ -269,7 +269,7 @@
             &lt;code&gt;$background&lt;/code&gt;
           &lt;/td&gt;
         &lt;/tr&gt;
-      
+
     &lt;/tbody&gt;
   &lt;/table&gt;
 
@@ -286,7 +286,7 @@
         &lt;th&gt;From&lt;/th&gt;
         &lt;th&gt;To&lt;/th&gt;
       &lt;/tr&gt;
-      
+
         &lt;tr&gt;
           &lt;td&gt;
             &lt;code&gt;$footer-background-color&lt;/code&gt;
@@ -298,7 +298,7 @@
             &lt;code&gt;$white-bis&lt;/code&gt;
           &lt;/td&gt;
         &lt;/tr&gt;
-      
+
     &lt;/tbody&gt;
   &lt;/table&gt;
 
@@ -325,7 +325,7 @@
         &lt;th&gt;Name&lt;/th&gt;
         &lt;th&gt;Value&lt;/th&gt;
       &lt;/tr&gt;
-      
+
         &lt;tr&gt;
           &lt;td&gt;
             &lt;code&gt;$breadcrumb-item-padding-vertical&lt;/code&gt;
@@ -334,7 +334,7 @@
             &lt;code&gt;0&lt;/code&gt;
           &lt;/td&gt;
         &lt;/tr&gt;
-      
+
         &lt;tr&gt;
           &lt;td&gt;
             &lt;code&gt;$breadcrumb-item-padding-horizontal&lt;/code&gt;
@@ -343,7 +343,7 @@
             &lt;code&gt;0.75em&lt;/code&gt;
           &lt;/td&gt;
         &lt;/tr&gt;
-      
+
     &lt;/tbody&gt;
   &lt;/table&gt;
 
@@ -359,7 +359,7 @@
         &lt;th&gt;Name&lt;/th&gt;
         &lt;th&gt;Value&lt;/th&gt;
       &lt;/tr&gt;
-      
+
         &lt;tr&gt;
           &lt;td&gt;
             &lt;code&gt;$message-body-border-color&lt;/code&gt;
@@ -368,7 +368,7 @@
             &lt;code&gt;$border&lt;/code&gt;
           &lt;/td&gt;
         &lt;/tr&gt;
-      
+
         &lt;tr&gt;
           &lt;td&gt;
             &lt;code&gt;$message-body-border-width&lt;/code&gt;
@@ -377,7 +377,7 @@
             &lt;code&gt;0 0 0 4px&lt;/code&gt;
           &lt;/td&gt;
         &lt;/tr&gt;
-      
+
         &lt;tr&gt;
           &lt;td&gt;
             &lt;code&gt;$message-header-weight&lt;/code&gt;
@@ -386,7 +386,7 @@
             &lt;code&gt;$weight-bold&lt;/code&gt;
           &lt;/td&gt;
         &lt;/tr&gt;
-      
+
         &lt;tr&gt;
           &lt;td&gt;
             &lt;code&gt;$message-header-body-border-width&lt;/code&gt;
@@ -395,7 +395,7 @@
             &lt;code&gt;0&lt;/code&gt;
           &lt;/td&gt;
         &lt;/tr&gt;
-      
+
     &lt;/tbody&gt;
   &lt;/table&gt;
 
@@ -411,7 +411,7 @@
         &lt;th&gt;Name&lt;/th&gt;
         &lt;th&gt;Value&lt;/th&gt;
       &lt;/tr&gt;
-      
+
         &lt;tr&gt;
           &lt;td&gt;
             &lt;code&gt;$navbar-box-shadow-size&lt;/code&gt;
@@ -420,7 +420,7 @@
             &lt;code&gt;0 2px 0 0&lt;/code&gt;
           &lt;/td&gt;
         &lt;/tr&gt;
-      
+
         &lt;tr&gt;
           &lt;td&gt;
             &lt;code&gt;$navbar-box-shadow-color&lt;/code&gt;
@@ -429,7 +429,7 @@
             &lt;code&gt;$background&lt;/code&gt;
           &lt;/td&gt;
         &lt;/tr&gt;
-      
+
         &lt;tr&gt;
           &lt;td&gt;
             &lt;code&gt;$navbar-padding-vertical&lt;/code&gt;
@@ -438,7 +438,7 @@
             &lt;code&gt;1rem&lt;/code&gt;
           &lt;/td&gt;
         &lt;/tr&gt;
-      
+
         &lt;tr&gt;
           &lt;td&gt;
             &lt;code&gt;$navbar-padding-horizontal&lt;/code&gt;
@@ -447,7 +447,7 @@
             &lt;code&gt;2rem&lt;/code&gt;
           &lt;/td&gt;
         &lt;/tr&gt;
-      
+
         &lt;tr&gt;
           &lt;td&gt;
             &lt;code&gt;$navbar-z&lt;/code&gt;
@@ -456,7 +456,7 @@
             &lt;code&gt;30&lt;/code&gt;
           &lt;/td&gt;
         &lt;/tr&gt;
-      
+
     &lt;/tbody&gt;
   &lt;/table&gt;
 
@@ -472,7 +472,7 @@
         &lt;th&gt;Name&lt;/th&gt;
         &lt;th&gt;Value&lt;/th&gt;
       &lt;/tr&gt;
-      
+
         &lt;tr&gt;
           &lt;td&gt;
             &lt;code&gt;$title-line-height&lt;/code&gt;
@@ -481,7 +481,7 @@
             &lt;code&gt;1.125&lt;/code&gt;
           &lt;/td&gt;
         &lt;/tr&gt;
-      
+
         &lt;tr&gt;
           &lt;td&gt;
             &lt;code&gt;$subtitle-line-height&lt;/code&gt;
@@ -490,7 +490,7 @@
             &lt;code&gt;1.25&lt;/code&gt;
           &lt;/td&gt;
         &lt;/tr&gt;
-      
+
         &lt;tr&gt;
           &lt;td&gt;
             &lt;code&gt;$subtitle-negative-margin&lt;/code&gt;
@@ -499,7 +499,7 @@
             &lt;code&gt;-1.25rem&lt;/code&gt;
           &lt;/td&gt;
         &lt;/tr&gt;
-      
+
     &lt;/tbody&gt;
   &lt;/table&gt;
 
@@ -523,7 +523,7 @@
     &lt;/tr&gt;
   &lt;/thead&gt;
   &lt;tbody&gt;
-    
+
       &lt;tr&gt;
         &lt;td&gt;
           &lt;code&gt;sass/components/message.sass&lt;/code&gt;
@@ -532,25 +532,25 @@
           &lt;code&gt;$message-body-border&lt;/code&gt;
         &lt;/td&gt;
         &lt;td&gt;
-          
+
             &lt;code&gt;$message-body-border-color&lt;/code&gt;
-          
+
             &lt;code&gt;$message-body-border-width&lt;/code&gt;
-          
+
         &lt;/td&gt;
       &lt;/tr&gt;
-    
+
   &lt;/tbody&gt;
 &lt;/table&gt;
 </description>
         <pubDate>Sat, 14 Apr 2018 00:00:00 +0100</pubDate>
-        <link>http://localhost:4000/2018/04/14/migration-to-v070/</link>
-        <guid isPermaLink="true">http://localhost:4000/2018/04/14/migration-to-v070/</guid>
+        <link>https://versions.bulma.io/0.7.2/2018/04/14/migration-to-v070/</link>
+        <guid isPermaLink="true">https://versions.bulma.io/0.7.2/2018/04/14/migration-to-v070/</guid>
       </item>
-    
+
       <item>
         <title>Website redesign: clearer layout, easier navigation, better content, and much more!</title>
-        
+
         <description>&lt;p&gt;The Bulma website has been widely redesigned! There’s been a lot of work, to say the least:&lt;/p&gt;
 
 &lt;figure&gt;
@@ -767,13 +767,13 @@
 &lt;p&gt;This will help further updates to be easier.&lt;/p&gt;
 </description>
         <pubDate>Fri, 13 Apr 2018 00:00:00 +0100</pubDate>
-        <link>http://localhost:4000/2018/04/13/website-redesign/</link>
-        <guid isPermaLink="true">http://localhost:4000/2018/04/13/website-redesign/</guid>
+        <link>https://versions.bulma.io/0.7.2/2018/04/13/website-redesign/</link>
+        <guid isPermaLink="true">https://versions.bulma.io/0.7.2/2018/04/13/website-redesign/</guid>
       </item>
-    
+
       <item>
         <title>Bulma supports Font Awesome&amp;nbsp;5</title>
-        
+
         <description>&lt;p&gt;Bulma is &lt;strong&gt;icon library agnostic&lt;/strong&gt;: this means that you can use &lt;em&gt;any&lt;/em&gt; icon font library (like Font Awesome 4 or 5, Material Design Icons, Open Iconic, Ionicons…) with Bulma’s &lt;code class=&quot;highlighter-rouge&quot;&gt;icon&lt;/code&gt; class.&lt;/p&gt;
 
 &lt;p&gt;As a result, &lt;strong&gt;Bulma already supports Font Awesome 5&lt;/strong&gt;! 😃&lt;/p&gt;
@@ -792,13 +792,13 @@
 &lt;p&gt;Check out the &lt;a href=&quot;/documentation/elements/icon/&quot;&gt;icon documentation&lt;/a&gt;.&lt;/p&gt;
 </description>
         <pubDate>Thu, 18 Jan 2018 00:00:00 +0000</pubDate>
-        <link>http://localhost:4000/2018/01/18/bulma-supports-font-awesome-5/</link>
-        <guid isPermaLink="true">http://localhost:4000/2018/01/18/bulma-supports-font-awesome-5/</guid>
+        <link>https://versions.bulma.io/0.7.2/2018/01/18/bulma-supports-font-awesome-5/</link>
+        <guid isPermaLink="true">https://versions.bulma.io/0.7.2/2018/01/18/bulma-supports-font-awesome-5/</guid>
       </item>
-    
+
       <item>
         <title>Bulma is on Patreon!</title>
-        
+
         <description>&lt;p&gt;&lt;strong&gt;Bulma&lt;/strong&gt; has now its own &lt;a href=&quot;https://www.patreon.com/jgthms&quot;&gt;Patreon page&lt;/a&gt;:&lt;/p&gt;
 
 &lt;figure&gt;
@@ -810,13 +810,13 @@
 &lt;p&gt;This will allow people to easily support Bulma, and ensure its future development.&lt;/p&gt;
 </description>
         <pubDate>Tue, 14 Nov 2017 00:00:00 +0000</pubDate>
-        <link>http://localhost:4000/2017/11/14/bulma-is-on-patreon/</link>
-        <guid isPermaLink="true">http://localhost:4000/2017/11/14/bulma-is-on-patreon/</guid>
+        <link>https://versions.bulma.io/0.7.2/2017/11/14/bulma-is-on-patreon/</link>
+        <guid isPermaLink="true">https://versions.bulma.io/0.7.2/2017/11/14/bulma-is-on-patreon/</guid>
       </item>
-    
+
       <item>
         <title>New feature: fixed navbar</title>
-        
+
         <description>&lt;p&gt;You can now fix a &lt;a href=&quot;/documentation/components/navbar/#fixed-navbar&quot;&gt;navbar&lt;/a&gt; to the &lt;strong&gt;top&lt;/strong&gt; or the &lt;strong&gt;bottom&lt;/strong&gt;:&lt;/p&gt;
 
 &lt;figure&gt;
@@ -836,13 +836,13 @@
 &lt;/figure&gt;
 </description>
         <pubDate>Wed, 01 Nov 2017 00:00:00 +0000</pubDate>
-        <link>http://localhost:4000/2017/11/01/fixed-navbar/</link>
-        <guid isPermaLink="true">http://localhost:4000/2017/11/01/fixed-navbar/</guid>
+        <link>https://versions.bulma.io/0.7.2/2017/11/01/fixed-navbar/</link>
+        <guid isPermaLink="true">https://versions.bulma.io/0.7.2/2017/11/01/fixed-navbar/</guid>
       </item>
-    
+
       <item>
         <title>New feature: list of buttons</title>
-        
+
         <description>&lt;p&gt;Similarly to the &lt;a href=&quot;/2017/08/03/list-of-tags/&quot;&gt;list of tags&lt;/a&gt; launched a few months ago, the &lt;a href=&quot;/documentation/elements/button/&quot;&gt;button&lt;/a&gt; has its own &lt;strong&gt;list of buttons&lt;/strong&gt;:&lt;/p&gt;
 
 &lt;figure&gt;
@@ -854,13 +854,13 @@
 &lt;p&gt;Although you could already &lt;strong&gt;group&lt;/strong&gt; buttons by using &lt;a href=&quot;/documentation/form/general/#form-group&quot;&gt;from groups&lt;/a&gt;, this new &lt;code class=&quot;highlighter-rouge&quot;&gt;buttons&lt;/code&gt; class makes everything easier.&lt;/p&gt;
 </description>
         <pubDate>Sun, 22 Oct 2017 00:00:00 +0100</pubDate>
-        <link>http://localhost:4000/2017/10/22/list-of-buttons/</link>
-        <guid isPermaLink="true">http://localhost:4000/2017/10/22/list-of-buttons/</guid>
+        <link>https://versions.bulma.io/0.7.2/2017/10/22/list-of-buttons/</link>
+        <guid isPermaLink="true">https://versions.bulma.io/0.7.2/2017/10/22/list-of-buttons/</guid>
       </item>
-    
+
       <item>
         <title>Roses are red – Links are blue</title>
-        
+
         <description>&lt;p&gt;By default, a browser will display links in &lt;strong style=&quot;color: blue;&quot;&gt;blue&lt;/strong&gt;. Bulma has up until now used the &lt;code class=&quot;highlighter-rouge&quot;&gt;$primary&lt;/code&gt; color as the &lt;code class=&quot;highlighter-rouge&quot;&gt;$link&lt;/code&gt; color:&lt;/p&gt;
 
 &lt;div class=&quot;language-sass highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;// Old styles
@@ -946,13 +946,13 @@
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 </description>
         <pubDate>Mon, 09 Oct 2017 00:00:00 +0100</pubDate>
-        <link>http://localhost:4000/2017/10/09/roses-are-red-links-are-blue/</link>
-        <guid isPermaLink="true">http://localhost:4000/2017/10/09/roses-are-red-links-are-blue/</guid>
+        <link>https://versions.bulma.io/0.7.2/2017/10/09/roses-are-red-links-are-blue/</link>
+        <guid isPermaLink="true">https://versions.bulma.io/0.7.2/2017/10/09/roses-are-red-links-are-blue/</guid>
       </item>
-    
+
       <item>
         <title>New feature: list of tags</title>
-        
+
         <description>&lt;p&gt;The &lt;a href=&quot;/documentation/elements/tag/&quot;&gt;tag&lt;/a&gt; is a small but useful element that can be used in many contexts, to &lt;strong&gt;enhance&lt;/strong&gt; the meaning of the text it’s attached to.&lt;/p&gt;
 
 &lt;p&gt;A tag rarely comes on its own though, so Bulma now supports &lt;a href=&quot;/documentation/elements/tag/#list-of-tags&quot;&gt;list of tags&lt;/a&gt;. The same way you can &lt;a href=&quot;together&quot;&gt;group controls&lt;/a&gt;, you can now &lt;strong&gt;group tags together&lt;/strong&gt; to form a list that can span multiple lines.&lt;/p&gt;
@@ -966,13 +966,13 @@
 &lt;p&gt;As a &lt;strong&gt;bonus&lt;/strong&gt;, there is also a &lt;a href=&quot;/documentation/elements/tag/#combinations&quot;&gt;delete tag&lt;/a&gt; available!&lt;/p&gt;
 </description>
         <pubDate>Thu, 03 Aug 2017 00:00:00 +0100</pubDate>
-        <link>http://localhost:4000/2017/08/03/list-of-tags/</link>
-        <guid isPermaLink="true">http://localhost:4000/2017/08/03/list-of-tags/</guid>
+        <link>https://versions.bulma.io/0.7.2/2017/08/03/list-of-tags/</link>
+        <guid isPermaLink="true">https://versions.bulma.io/0.7.2/2017/08/03/list-of-tags/</guid>
       </item>
-    
+
       <item>
         <title>Bulma / Bootstrap comparison</title>
-        
+
         <description>&lt;p&gt;Bulma has always been a Bootstrap fan, inspired by its goal and purpose.&lt;/p&gt;
 
 &lt;p&gt;Some users ask why they should use Bulma over Bootstrap, and there is &lt;strong&gt;no definite answer&lt;/strong&gt;, because while both CSS frameworks share &lt;em&gt;similarities&lt;/em&gt;, they also &lt;strong&gt;differ&lt;/strong&gt; in many ways.&lt;/p&gt;
@@ -980,9 +980,9 @@
 &lt;p&gt;The new page &lt;a href=&quot;https://bulma.io/alternative-to-bootstrap/&quot;&gt;&quot;Alternative to Bootstrap&quot;&lt;/a&gt; draws a &lt;strong&gt;feature comparison&lt;/strong&gt; to help undecided users choose the right tool for their web design needs, which can be either Bulma or Bootstrap.&lt;/p&gt;
 </description>
         <pubDate>Tue, 01 Aug 2017 00:00:00 +0100</pubDate>
-        <link>http://localhost:4000/2017/08/01/bulma-bootstrap-comparison/</link>
-        <guid isPermaLink="true">http://localhost:4000/2017/08/01/bulma-bootstrap-comparison/</guid>
+        <link>https://versions.bulma.io/0.7.2/2017/08/01/bulma-bootstrap-comparison/</link>
+        <guid isPermaLink="true">https://versions.bulma.io/0.7.2/2017/08/01/bulma-bootstrap-comparison/</guid>
       </item>
-    
+
   </channel>
 </rss>

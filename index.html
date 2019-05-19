@@ -1,16 +1,21 @@
 ---
 versions:
-- 0.7.2
-- 0.7.1
-- 0.7.0
-- 0.6.2
-- 0.6.1
-- 0.6.0
-- 0.5.3
-- 0.5.2
-- 0.5.1
-- 0.5.0
-- 0.4.4
+- values:
+  - 0.7.4
+  - 0.7.2
+  - 0.7.1
+  - 0.7.0
+- values:
+  - 0.6.2
+  - 0.6.1
+  - 0.6.0
+- values:
+  - 0.5.3
+  - 0.5.2
+  - 0.5.1
+  - 0.5.0
+- values:
+  - 0.4.4
 ---
 
 <!DOCTYPE html>
@@ -33,21 +38,21 @@ versions:
             Access the documentation for the current and previous Bulma releases
           </h2>
 
-          <div class="field is-grouped is-grouped-multiline">
-            <div class="control">
-              <a class="button is-link is-outlined" href="https://bulma.io/">
-                <p><strong>Current</strong>: 0.7.4</p>
-              </a>
-            </div>
+          <div class="buttons">
+            <a class="button is-link is-outlined" href="https://bulma.io/">
+              <p><strong>Current version</strong>: 0.7.5</p>
+            </a>
           </div>
 
-          <div class="buttons">
-            {% for version in page.versions %}
-              <a class="button is-small is-outlined" href="{{ site.url }}/{{ version }}/">
-                {{ version }}
-              </a>
-            {% endfor %}
-          </div>
+          {% for version in page.versions %}
+            <div class="buttons" style="margin-bottom: 0 !important;">
+              {% for value in version.values %}
+                <a class="button is-small is-outlined" href="{{ site.url }}/{{ value }}/" style="width: 4.5em !important;">
+                  {{ value }}
+                </a>
+              {% endfor %}
+            </div>
+          {% endfor %}
         </div>
       </div>
 
