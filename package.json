@@ -11,7 +11,7 @@
     "babel-preset-env": "^1.6.0",
     "babel-preset-es2015-ie": "^6.7.0",
     "bulma": "^0.7.2",
-    "node-sass": "^4.5.3",
+    "node-sass": "^4.13.1",
     "postcss-cli": "^4.1.1"
   },
   "gitHead": "d8d56bb2e0cfaf101f7b9cd6ae5da0977dd8112a",
