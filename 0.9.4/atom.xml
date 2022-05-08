@@ -1,0 +1,1289 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Bulma: Free, open source, and modern CSS framework based on Flexbox</title>
+    <description>Bulma is a free, open source CSS framework based on Flexbox and built with Sass. It's 100% responsive, fully modular, and available for free.</description>
+    <link>https://bulma.io</link>
+    <id>https://bulma.io</id>
+    <updated>2022-05-08T17:17:46+01:00</updated>
+    <author>
+      <name>Bulma: Free, open source, and modern CSS framework based on Flexbox</name>
+      <email>bbxdesign@gmail.com</email>
+    </author>
+    <atom:link href="https://bulma.io/atom.xml" rel="self" type="application/rss+xml" />
+    
+      <item>
+        <title>The `.block`, probably Bulma’s most important feature</title>
+        
+        <description>&lt;p&gt;The Bulma &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;block&lt;/code&gt; is a simple element but with a very powerful feature: it provides &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;1.5rem&lt;/code&gt; margin at the bottom, if it’s not the last child.&lt;/p&gt;
+
+&lt;p&gt;It exists as its own &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.block&lt;/code&gt; CSS class, but its properties are also used on &lt;strong&gt;many other Bulma components&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;For example, if you were to combine a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;notification&lt;/code&gt;, and a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;pagination&lt;/code&gt;, they would be &lt;strong&gt;automatically spaced evenly&lt;/strong&gt;:&lt;/p&gt;
+
+&lt;div class=&quot;block is-size-6&quot; style=&quot;margin-left: auto; margin-right: auto; max-width: 80%; padding: 1.5rem;&quot;&gt;
+  &lt;p class=&quot;title mb-5&quot;&gt;Newsletter&lt;/p&gt;
+
+  &lt;div class=&quot;notification is-success&quot;&gt;
+    451 new subscribers this month.
+  &lt;/div&gt;
+
+  &lt;table class=&quot;table mb-5 is-bordered is-striped is-hoverable is-fullwidth&quot;&gt;
+    &lt;thead&gt;
+      &lt;tr&gt;
+        &lt;th&gt;Name&lt;/th&gt;
+        &lt;th&gt;Email&lt;/th&gt;
+        &lt;th&gt;Actions&lt;/th&gt;
+      &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+      &lt;tr&gt;
+        &lt;td&gt;Alex&lt;/td&gt;
+        &lt;td&gt;alex.smith@example.com&lt;/td&gt;
+        &lt;td&gt;&lt;a&gt;Edit&lt;/a&gt; · &lt;a&gt;Delete&lt;/a&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;Sam&lt;/td&gt;
+        &lt;td&gt;sam.rogers@example.com&lt;/td&gt;
+        &lt;td&gt;&lt;a&gt;Edit&lt;/a&gt; · &lt;a&gt;Delete&lt;/a&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;Luke&lt;/td&gt;
+        &lt;td&gt;hello.luke@example.com&lt;/td&gt;
+        &lt;td&gt;&lt;a&gt;Edit&lt;/a&gt; · &lt;a&gt;Delete&lt;/a&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;Eli&lt;/td&gt;
+        &lt;td&gt;eli.larry@example.com&lt;/td&gt;
+        &lt;td&gt;&lt;a&gt;Edit&lt;/a&gt; · &lt;a&gt;Delete&lt;/a&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;Dan&lt;/td&gt;
+        &lt;td&gt;dan.danny@example.com&lt;/td&gt;
+        &lt;td&gt;&lt;a&gt;Edit&lt;/a&gt; · &lt;a&gt;Delete&lt;/a&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+    &lt;/tbody&gt;
+  &lt;/table&gt;
+
+  &lt;nav class=&quot;pagination&quot; role=&quot;navigation&quot; aria-label=&quot;pagination&quot;&gt;
+    &lt;a class=&quot;pagination-previous&quot;&gt;Previous&lt;/a&gt;
+    &lt;a class=&quot;pagination-next&quot;&gt;Next page&lt;/a&gt;
+    &lt;ul class=&quot;pagination-list ml-0 mt-0&quot;&gt;
+      &lt;li class=&quot;mt-0&quot;&gt;
+        &lt;a class=&quot;pagination-link&quot; aria-label=&quot;Goto page 1&quot;&gt;1&lt;/a&gt;
+      &lt;/li&gt;
+      &lt;li class=&quot;mt-0&quot;&gt;
+        &lt;span class=&quot;pagination-ellipsis&quot;&gt;&amp;hellip;&lt;/span&gt;
+      &lt;/li&gt;
+      &lt;li class=&quot;mt-0&quot;&gt;
+        &lt;a class=&quot;pagination-link&quot; aria-label=&quot;Goto page 45&quot;&gt;45&lt;/a&gt;
+      &lt;/li&gt;
+      &lt;li class=&quot;mt-0&quot;&gt;
+        &lt;a class=&quot;pagination-link is-current&quot; aria-label=&quot;Page 46&quot; aria-current=&quot;page&quot;&gt;46&lt;/a&gt;
+      &lt;/li&gt;
+      &lt;li class=&quot;mt-0&quot;&gt;
+        &lt;a class=&quot;pagination-link&quot; aria-label=&quot;Goto page 47&quot;&gt;47&lt;/a&gt;
+      &lt;/li&gt;
+      &lt;li class=&quot;mt-0&quot;&gt;
+        &lt;span class=&quot;pagination-ellipsis&quot;&gt;&amp;hellip;&lt;/span&gt;
+      &lt;/li&gt;
+      &lt;li class=&quot;mt-0&quot;&gt;
+        &lt;a class=&quot;pagination-link&quot; aria-label=&quot;Goto page 86&quot;&gt;86&lt;/a&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/nav&gt;
+&lt;/div&gt;
+
+&lt;p&gt;For comparison, if there was no spacing, here’s what they would look like:&lt;/p&gt;
+
+&lt;div class=&quot;block is-size-6&quot; style=&quot;margin-left: auto; margin-right: auto; max-width: 80%; padding: 1.5rem;&quot;&gt;
+  &lt;p class=&quot;title mb-0&quot;&gt;Newsletter&lt;/p&gt;
+
+  &lt;div class=&quot;notification is-success mb-0&quot;&gt;
+    451 new subscribers this month.
+  &lt;/div&gt;
+
+  &lt;table class=&quot;table is-bordered is-striped is-hoverable is-fullwidth mb-0&quot;&gt;
+    &lt;thead&gt;
+      &lt;tr&gt;
+        &lt;th&gt;Name&lt;/th&gt;
+        &lt;th&gt;Email&lt;/th&gt;
+        &lt;th&gt;Actions&lt;/th&gt;
+      &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+      &lt;tr&gt;
+        &lt;td&gt;Alex&lt;/td&gt;
+        &lt;td&gt;alex.smith@example.com&lt;/td&gt;
+        &lt;td&gt;&lt;a&gt;Edit&lt;/a&gt; · &lt;a&gt;Delete&lt;/a&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;Sam&lt;/td&gt;
+        &lt;td&gt;sam.rogers@example.com&lt;/td&gt;
+        &lt;td&gt;&lt;a&gt;Edit&lt;/a&gt; · &lt;a&gt;Delete&lt;/a&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;Luke&lt;/td&gt;
+        &lt;td&gt;hello.luke@example.com&lt;/td&gt;
+        &lt;td&gt;&lt;a&gt;Edit&lt;/a&gt; · &lt;a&gt;Delete&lt;/a&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;Eli&lt;/td&gt;
+        &lt;td&gt;eli.larry@example.com&lt;/td&gt;
+        &lt;td&gt;&lt;a&gt;Edit&lt;/a&gt; · &lt;a&gt;Delete&lt;/a&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;Dan&lt;/td&gt;
+        &lt;td&gt;dan.danny@example.com&lt;/td&gt;
+        &lt;td&gt;&lt;a&gt;Edit&lt;/a&gt; · &lt;a&gt;Delete&lt;/a&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+    &lt;/tbody&gt;
+  &lt;/table&gt;
+
+  &lt;nav class=&quot;pagination mb-0&quot; role=&quot;navigation&quot; aria-label=&quot;pagination&quot;&gt;
+    &lt;a class=&quot;pagination-previous&quot;&gt;Previous&lt;/a&gt;
+    &lt;a class=&quot;pagination-next&quot;&gt;Next page&lt;/a&gt;
+    &lt;ul class=&quot;pagination-list ml-0 mt-0&quot;&gt;
+      &lt;li class=&quot;mt-0&quot;&gt;
+        &lt;a class=&quot;pagination-link&quot; aria-label=&quot;Goto page 1&quot;&gt;1&lt;/a&gt;
+      &lt;/li&gt;
+      &lt;li class=&quot;mt-0&quot;&gt;
+        &lt;span class=&quot;pagination-ellipsis&quot;&gt;&amp;hellip;&lt;/span&gt;
+      &lt;/li&gt;
+      &lt;li class=&quot;mt-0&quot;&gt;
+        &lt;a class=&quot;pagination-link&quot; aria-label=&quot;Goto page 45&quot;&gt;45&lt;/a&gt;
+      &lt;/li&gt;
+      &lt;li class=&quot;mt-0&quot;&gt;
+        &lt;a class=&quot;pagination-link is-current&quot; aria-label=&quot;Page 46&quot; aria-current=&quot;page&quot;&gt;46&lt;/a&gt;
+      &lt;/li&gt;
+      &lt;li class=&quot;mt-0&quot;&gt;
+        &lt;a class=&quot;pagination-link&quot; aria-label=&quot;Goto page 47&quot;&gt;47&lt;/a&gt;
+      &lt;/li&gt;
+      &lt;li class=&quot;mt-0&quot;&gt;
+        &lt;span class=&quot;pagination-ellipsis&quot;&gt;&amp;hellip;&lt;/span&gt;
+      &lt;/li&gt;
+      &lt;li class=&quot;mt-0&quot;&gt;
+        &lt;a class=&quot;pagination-link&quot; aria-label=&quot;Goto page 86&quot;&gt;86&lt;/a&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/nav&gt;
+&lt;/div&gt;
+
+&lt;p&gt;This &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;block&lt;/code&gt; element has always existed; only recently has there been a &lt;a href=&quot;/documentation/elements/block/&quot;&gt;dedicated documentation page&lt;/a&gt;.&lt;/p&gt;
+</description>
+        <pubDate>Sat, 23 Jan 2021 00:00:00 +0000</pubDate>
+        <link>https://bulma.io/2021/01/23/the-block-probably-bulmas-most-important-feature/</link>
+        <guid isPermaLink="true">https://bulma.io/2021/01/23/the-block-probably-bulmas-most-important-feature/</guid>
+      </item>
+    
+      <item>
+        <title>New feature: `.icon-text`</title>
+        
+        <description>&lt;p&gt;Bulma’s &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.icon&lt;/code&gt; element has been around since its inception. It acts as a simple container for any &lt;strong&gt;icon font&lt;/strong&gt;. And thanks to its fixed square dimensions, it provides the icon font time to load while preserving the space fo it.&lt;/p&gt;
+
+&lt;p&gt;From version &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;0.9.2&lt;/code&gt;, a new &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.icon-text&lt;/code&gt; element will be available. It allows you to easily combine an &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.icon&lt;/code&gt; element with &lt;strong&gt;text&lt;/strong&gt;. The purpose of this new feature is to preserve the correct &lt;strong&gt;alignment&lt;/strong&gt; of both parts.&lt;/p&gt;
+
+&lt;div class=&quot;block has-text-centered py-6&quot;&gt;
+  &lt;span class=&quot;icon-text&quot;&gt;
+    &lt;span class=&quot;icon&quot;&gt;
+      &lt;i class=&quot;fas fa-home&quot;&gt;&lt;/i&gt;
+    &lt;/span&gt;
+    &lt;span&gt;Home&lt;/span&gt;
+  &lt;/span&gt;
+&lt;/div&gt;
+
+&lt;p&gt;You can combine several icons in sequence:&lt;/p&gt;
+
+&lt;div class=&quot;block has-text-centered py-6&quot;&gt;
+  &lt;span class=&quot;icon-text&quot;&gt;
+    &lt;span class=&quot;icon&quot;&gt;
+      &lt;i class=&quot;fas fa-train&quot;&gt;&lt;/i&gt;
+    &lt;/span&gt;
+    &lt;span&gt;Paris&lt;/span&gt;
+    &lt;span class=&quot;icon&quot;&gt;
+      &lt;i class=&quot;fas fa-arrow-right&quot;&gt;&lt;/i&gt;
+    &lt;/span&gt;
+    &lt;span&gt;Budapest&lt;/span&gt;
+    &lt;span class=&quot;icon&quot;&gt;
+      &lt;i class=&quot;fas fa-arrow-right&quot;&gt;&lt;/i&gt;
+    &lt;/span&gt;
+    &lt;span&gt;Bucharest&lt;/span&gt;
+    &lt;span class=&quot;icon&quot;&gt;
+      &lt;i class=&quot;fas fa-arrow-right&quot;&gt;&lt;/i&gt;
+    &lt;/span&gt;
+    &lt;span&gt;Istanbul&lt;/span&gt;
+    &lt;span class=&quot;icon&quot;&gt;
+      &lt;i class=&quot;fas fa-flag-checkered&quot;&gt;&lt;/i&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+&lt;/div&gt;
+
+&lt;p&gt;See the &lt;a href=&quot;/documentation/elements/icon/#icon-text&quot;&gt;full &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.icon-text&lt;/code&gt; documentation&lt;/a&gt;.&lt;/p&gt;
+</description>
+        <pubDate>Tue, 12 Jan 2021 00:00:00 +0000</pubDate>
+        <link>https://bulma.io/2021/01/12/new-feature-icon-text/</link>
+        <guid isPermaLink="true">https://bulma.io/2021/01/12/new-feature-icon-text/</guid>
+      </item>
+    
+      <item>
+        <title>Light and Dark colors, better look, larger form controls, panel colors, and more</title>
+        
+        <description>&lt;p&gt;The new version &lt;strong&gt;&lt;a href=&quot;https://github.com/jgthms/bulma/releases/tag/0.8.0&quot;&gt;Bulma 0.8.0&lt;/a&gt;&lt;/strong&gt; is out! 😃 It comes with several bug fixes and a lot of nice new features:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;#light-dark-colors&quot;&gt;Light/Dark colors&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#better-visual-look&quot;&gt;Better visual look&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#panel-colors&quot;&gt;Panel colors&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#larger-form-controls&quot;&gt;Larger form controls&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#4-value-color-map&quot;&gt;4-value color map&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#scheme-variables-for-dark-mode&quot;&gt;Scheme variables for “Dark mode”&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;More in the &lt;a href=&quot;https://github.com/jgthms/bulma/releases/tag/0.8.0&quot;&gt;Changelog&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3 id=&quot;light-dark-colors&quot; class=&quot;title is-4 is-spaced bd-anchor-title&quot;&gt;
+  &lt;span class=&quot;bd-anchor-name&quot;&gt;
+    Light/Dark colors
+  &lt;/span&gt;
+  &lt;a class=&quot;bd-anchor-link&quot; href=&quot;#light-dark-colors&quot;&gt;
+    #
+  &lt;/a&gt;
+  
+&lt;/h3&gt;
+
+&lt;p&gt;Each main color (&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&quot;primary&quot;&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&quot;info&quot;&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&quot;success&quot;&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&quot;warning&quot;&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&quot;danger&quot;&lt;/code&gt;) now comes with a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;*-light&lt;/code&gt; and a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;*-dark&lt;/code&gt; version. They are calculated using 2 new color functions:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;findLightColor()&lt;/code&gt; which finds the light version of a color&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;findDarkColor()&lt;/code&gt; which finds the dark version of a color&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The &lt;strong&gt;light&lt;/strong&gt; colors are used by the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;button&lt;/code&gt; element:&lt;/p&gt;
+
+&lt;figure&gt;
+  &lt;a href=&quot;/documentation/elements/button/&quot;&gt;
+    &lt;img src=&quot;https://bulma.io/images/blog/v8/light-buttons-bis.png&quot; alt=&quot;List Bulma buttons&quot; width=&quot;530&quot; height=&quot;104&quot; /&gt;
+  &lt;/a&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;The &lt;strong&gt;light&lt;/strong&gt; and &lt;strong&gt;dark&lt;/strong&gt; colors are used by the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;message&lt;/code&gt; component, which generates much prettier colored versions. See the difference between before (left) and after (right):&lt;/p&gt;
+
+&lt;div class=&quot;bd-post-fullwidth&quot;&gt;
+  &lt;a href=&quot;/documentation/components/message/&quot;&gt;
+    &lt;img src=&quot;https://bulma.io/images/blog/v8/messages-before.png&quot; alt=&quot;Messages before&quot; width=&quot;448&quot; height=&quot;1200&quot; /&gt;
+    &lt;img src=&quot;https://bulma.io/images/blog/v8/messages-after.png&quot; alt=&quot;Messages after&quot; width=&quot;448&quot; height=&quot;1200&quot; /&gt;
+  &lt;/a&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&quot;better-visual-look&quot; class=&quot;title is-4 is-spaced bd-anchor-title&quot;&gt;
+  &lt;span class=&quot;bd-anchor-name&quot;&gt;
+    Better visual look
+  &lt;/span&gt;
+  &lt;a class=&quot;bd-anchor-link&quot; href=&quot;#better-visual-look&quot;&gt;
+    #
+  &lt;/a&gt;
+  
+&lt;/h3&gt;
+
+&lt;p&gt;Some of the Bulma colors have been updated:&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;tr&gt;
+    &lt;th&gt;Color&lt;/th&gt;
+    &lt;th&gt;Before&lt;/th&gt;
+    &lt;th&gt;After&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;th&gt;
+      &lt;code&gt;$green&lt;/code&gt;
+    &lt;/th&gt;
+    &lt;td&gt;
+      &lt;span class=&quot;bd-color&quot; style=&quot;background: hsl(141, 71%, 48%);&quot;&gt;&lt;/span&gt;
+&lt;code&gt;hsl(141, 71%, 48%)&lt;/code&gt;
+
+    &lt;/td&gt;
+    &lt;td&gt;
+      &lt;span class=&quot;bd-color&quot; style=&quot;background: hsl(141, 53%, 53%);&quot;&gt;&lt;/span&gt;
+&lt;code&gt;hsl(141, 53%, 53%)&lt;/code&gt;
+
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;th&gt;
+      &lt;code&gt;$cyan&lt;/code&gt;
+    &lt;/th&gt;
+    &lt;td&gt;
+      &lt;span class=&quot;bd-color&quot; style=&quot;background: hsl(204, 86%, 53%);&quot;&gt;&lt;/span&gt;
+&lt;code&gt;hsl(204, 86%, 53%)&lt;/code&gt;
+
+    &lt;/td&gt;
+    &lt;td&gt;
+      &lt;span class=&quot;bd-color&quot; style=&quot;background: hsl(204, 71%, 53%);&quot;&gt;&lt;/span&gt;
+&lt;code&gt;hsl(204, 71%, 53%)&lt;/code&gt;
+
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;th&gt;
+      &lt;code&gt;$red&lt;/code&gt;
+    &lt;/th&gt;
+    &lt;td&gt;
+      &lt;span class=&quot;bd-color&quot; style=&quot;background: hsl(348, 100%, 61%);&quot;&gt;&lt;/span&gt;
+&lt;code&gt;hsl(348, 100%, 61%)&lt;/code&gt;
+
+    &lt;/td&gt;
+    &lt;td&gt;
+      &lt;span class=&quot;bd-color&quot; style=&quot;background: hsl(348, 86%, 61%);&quot;&gt;&lt;/span&gt;
+&lt;code&gt;hsl(348, 86%, 61%)&lt;/code&gt;
+
+    &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+
+&lt;p&gt;The &lt;strong&gt;shadows&lt;/strong&gt; of the &lt;code&gt;box&lt;/code&gt; and &lt;code&gt;card&lt;/code&gt; have been improved:&lt;/p&gt;
+
+&lt;div class=&quot;bd-post-fullwidth&quot;&gt;
+  &lt;a href=&quot;/documentation/components/card/&quot;&gt;
+    &lt;img src=&quot;https://bulma.io/images/blog/v8/card-before.png&quot; alt=&quot;Card before&quot; width=&quot;464&quot; height=&quot;236&quot; /&gt;
+    &lt;img src=&quot;https://bulma.io/images/blog/v8/card-after.png&quot; alt=&quot;Card after&quot; width=&quot;464&quot; height=&quot;236&quot; /&gt;
+  &lt;/a&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;bd-post-fullwidth&quot;&gt;
+  &lt;a href=&quot;/documentation/elements/box/&quot; style=&quot;display: block;&quot; class=&quot;has-text-centered&quot;&gt;
+    &lt;img src=&quot;https://bulma.io/images/blog/v8/box-before.png&quot; alt=&quot;Box before&quot; width=&quot;464&quot; height=&quot;236&quot; /&gt;
+    &lt;img src=&quot;https://bulma.io/images/blog/v8/box-after.png&quot; alt=&quot;Box after&quot; width=&quot;464&quot; height=&quot;236&quot; /&gt;
+  &lt;/a&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&quot;panel-colors&quot; class=&quot;title is-4 is-spaced bd-anchor-title&quot;&gt;
+  &lt;span class=&quot;bd-anchor-name&quot;&gt;
+    Panel colors
+  &lt;/span&gt;
+  &lt;a class=&quot;bd-anchor-link&quot; href=&quot;#panel-colors&quot;&gt;
+    #
+  &lt;/a&gt;
+  
+&lt;/h3&gt;
+
+&lt;p&gt;
+  The &lt;a href=&quot;/documentation/components/panel/&quot;&gt;panel component&lt;/a&gt; is now available in all &lt;strong&gt;colors&lt;/strong&gt;:
+&lt;/p&gt;
+
+&lt;div class=&quot;bd-post-fullwidth&quot;&gt;
+  &lt;a href=&quot;/documentation/components/panel/&quot;&gt;
+    &lt;img src=&quot;https://bulma.io/images/blog/v8/panel-colors.png&quot; alt=&quot;Panel colors&quot; width=&quot;768&quot; height=&quot;1029&quot; /&gt;
+  &lt;/a&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&quot;larger-form-controls&quot; class=&quot;title is-4 is-spaced bd-anchor-title&quot;&gt;
+  &lt;span class=&quot;bd-anchor-name&quot;&gt;
+    Larger form controls
+  &lt;/span&gt;
+  &lt;a class=&quot;bd-anchor-link&quot; href=&quot;#larger-form-controls&quot;&gt;
+    #
+  &lt;/a&gt;
+  
+&lt;/h3&gt;
+
+&lt;p&gt;Form controls and buttons are now &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;2.5em&lt;/code&gt; high. You can revert this resizing by setting these previous values:&lt;/p&gt;
+
+&lt;div class=&quot;language-sass highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$control-height&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;.25em&lt;/span&gt;
+&lt;span class=&quot;nv&quot;&gt;$control-padding-vertical&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;calc&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;.375em&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$control-border-width&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;nv&quot;&gt;$control-padding-horizontal&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;calc&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;.625em&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$control-border-width&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;nv&quot;&gt;$button-padding-vertical&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;calc&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;.375em&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$button-border-width&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;nv&quot;&gt;$button-padding-horizontal&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;.75em&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;4-value-color-map&quot; class=&quot;title is-4 is-spaced bd-anchor-title&quot;&gt;
+  &lt;span class=&quot;bd-anchor-name&quot;&gt;
+    4-value color map
+  &lt;/span&gt;
+  &lt;a class=&quot;bd-anchor-link&quot; href=&quot;#4-value-color-map&quot;&gt;
+    #
+  &lt;/a&gt;
+  
+&lt;/h3&gt;
+
+&lt;p&gt;The &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;$colors&lt;/code&gt; Sass map now accepts, for each of its values, a map of up to &lt;strong&gt;4&lt;/strong&gt; values. For example: the key &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&quot;info&quot;&lt;/code&gt; now has the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;($info, $info-invert, $info-light, $info-dark)&lt;/code&gt; map.&lt;/p&gt;
+
+&lt;p&gt;If you provide a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;$custom-colors&lt;/code&gt; map, you can decide to provide a map of 1, 2, 3 or 4 values for each value. If fewer than 4 are provided, Bulma will calculate the remaining ones:&lt;/p&gt;
+
+&lt;div class=&quot;language-scss highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$custom-colors&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
+  &lt;span class=&quot;s2&quot;&gt;&quot;lime&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;lime&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;
+  &lt;span class=&quot;s2&quot;&gt;&quot;tomato&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;tomato&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;white&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;
+  &lt;span class=&quot;s2&quot;&gt;&quot;orange&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$orange&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$orange-invert&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$orange-light&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;
+  &lt;span class=&quot;s2&quot;&gt;&quot;lavender&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$lavender&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$lavender-invert&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$lavender-light&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$lavender-dark&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;This is processed by the updated &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;mergeColorMaps()&lt;/code&gt; Sass function.&lt;/p&gt;
+
+&lt;h3 id=&quot;scheme-variables-for-dark-mode&quot; class=&quot;title is-4 is-spaced bd-anchor-title&quot;&gt;
+  &lt;span class=&quot;bd-anchor-name&quot;&gt;
+    Scheme variables for &quot;Dark mode&quot;
+  &lt;/span&gt;
+  &lt;a class=&quot;bd-anchor-link&quot; href=&quot;#scheme-variables-for-dark-mode&quot;&gt;
+    #
+  &lt;/a&gt;
+  
+&lt;/h3&gt;
+
+&lt;p&gt;There are 6 new &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;$scheme&lt;/code&gt; derived variables: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;$scheme-main&lt;/code&gt; &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;$scheme-main-bis&lt;/code&gt; &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;$scheme-main-ter&lt;/code&gt; &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;$scheme-invert&lt;/code&gt; &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;$scheme-invert-bis&lt;/code&gt; &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;$scheme-invert-ter&lt;/code&gt;
+They replace the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;$white&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;$black&lt;/code&gt; occurrences in the codebase.&lt;/p&gt;
+
+&lt;p&gt;This makes it easy to create a &lt;strong&gt;“Dark mode”&lt;/strong&gt; simply by swapping the values:&lt;/p&gt;
+
+&lt;div class=&quot;language-sass highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$scheme-main&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$black&lt;/span&gt;
+&lt;span class=&quot;nv&quot;&gt;$scheme-invert&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$white&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;// etc.&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;That is also why most of the codebase now references &lt;strong&gt;derived&lt;/strong&gt; variables (&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;$text&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;$background&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;$border&lt;/code&gt; etc.) instead of &lt;strong&gt;initial&lt;/strong&gt; ones (&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;$grey&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;$grey-lighter&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;$grey-darker&lt;/code&gt; etc.): updating the derived variables will affect all elements and components directly.&lt;/p&gt;
+
+&lt;hr class=&quot;hr&quot; /&gt;
+
+&lt;p&gt;The new 0.8.0 version should be fully compatible with any Bulma setup. Feel free to &lt;a href=&quot;https://github.com/jgthms/bulma/issues&quot; target=&quot;_blank&quot;&gt;post an issue&lt;/a&gt; if you encounter any problem upgrading.&lt;/p&gt;
+</description>
+        <pubDate>Tue, 15 Oct 2019 00:00:00 +0100</pubDate>
+        <link>https://bulma.io/2019/10/15/light-dark-colors/</link>
+        <guid isPermaLink="true">https://bulma.io/2019/10/15/light-dark-colors/</guid>
+      </item>
+    
+      <item>
+        <title>Automatic variables documentation</title>
+        
+        <description>&lt;p&gt;Bulma is highly customizable because there are &lt;strong&gt;415 Sass variables&lt;/strong&gt; across &lt;strong&gt;28 files&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;More and more CSS values are transformed into Sass variables for easy customization. And each new Bulma feature is required to come with its own set of variables.&lt;/p&gt;
+
+&lt;p&gt;While providing these variables is necessary, it’s only useful if developers are aware they exist! Keeping &lt;strong&gt;in sync&lt;/strong&gt; the documentation and the source files used to be a manual process. It is now &lt;strong&gt;automatic&lt;/strong&gt;, thanks to a script that parses the source files and outputs the numerous Sass variables as JSON data.&lt;/p&gt;
+
+&lt;figure&gt;
+  &lt;img src=&quot;https://bulma.io/images/blog/variables/json.png&quot; alt=&quot;JSON variables&quot; width=&quot;275&quot; height=&quot;775&quot; /&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;As an added bonus, each variable row in the docs comes with its &lt;strong&gt;type&lt;/strong&gt; and its &lt;strong&gt;computed value&lt;/strong&gt; (if applicable).&lt;/p&gt;
+
+&lt;figure&gt;
+  &lt;img src=&quot;https://bulma.io/images/blog/variables/variables-table.png&quot; alt=&quot;Variables table&quot; width=&quot;597&quot; height=&quot;212&quot; /&gt;
+&lt;/figure&gt;
+</description>
+        <pubDate>Wed, 20 Jun 2018 00:00:00 +0100</pubDate>
+        <link>https://bulma.io/2018/06/20/automatic-variables-documentation/</link>
+        <guid isPermaLink="true">https://bulma.io/2018/06/20/automatic-variables-documentation/</guid>
+      </item>
+    
+      <item>
+        <title>Migrating to v0.7.0</title>
+        
+        <description>&lt;p&gt;A new major Bulma update is out: &lt;a href=&quot;#&quot;&gt;v0.7.0&lt;/a&gt;!&lt;/p&gt;
+
+&lt;p&gt;While this update is mainly focused on a massive &lt;a href=&quot;/2018/04/13/website-redesign/&quot;&gt;website redesign&lt;/a&gt;, it also includes a few bug fixes, some new features, and some variable changes.&lt;/p&gt;
+
+&lt;p&gt;These variable changes are documented here, so you can edit or revert them if needed.&lt;/p&gt;
+
+&lt;h3 id=&quot;updated-default-values&quot; class=&quot;title is-4 is-spaced bd-anchor-title&quot;&gt;
+  &lt;span class=&quot;bd-anchor-name&quot;&gt;
+    Updated default values
+  &lt;/span&gt;
+  &lt;a class=&quot;bd-anchor-link&quot; href=&quot;#updated-default-values&quot;&gt;
+    #
+  &lt;/a&gt;
+  
+&lt;/h3&gt;
+
+&lt;table class=&quot;table is-bordered&quot;&gt;
+    &lt;tbody&gt;
+      &lt;tr&gt;
+        &lt;th class=&quot;is-light&quot; colspan=&quot;3&quot;&gt;
+          File
+          &lt;code&gt;sass/utilities/initial-variables.sass&lt;/code&gt;
+        &lt;/th&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;th&gt;Variable&lt;/th&gt;
+        &lt;th&gt;From&lt;/th&gt;
+        &lt;th&gt;To&lt;/th&gt;
+      &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;
+            &lt;code&gt;$gap&lt;/code&gt;
+          &lt;/td&gt;
+          &lt;td&gt;
+            &lt;code&gt;32px&lt;/code&gt;
+          &lt;/td&gt;
+          &lt;td&gt;
+            &lt;code&gt;64px&lt;/code&gt;
+          &lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;
+            &lt;code&gt;$radius&lt;/code&gt;
+          &lt;/td&gt;
+          &lt;td&gt;
+            &lt;code&gt;3px&lt;/code&gt;
+          &lt;/td&gt;
+          &lt;td&gt;
+            &lt;code&gt;4px&lt;/code&gt;
+          &lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;
+            &lt;code&gt;$radius-large&lt;/code&gt;
+          &lt;/td&gt;
+          &lt;td&gt;
+            &lt;code&gt;5px&lt;/code&gt;
+          &lt;/td&gt;
+          &lt;td&gt;
+            &lt;code&gt;6px&lt;/code&gt;
+          &lt;/td&gt;
+        &lt;/tr&gt;
+      
+    &lt;/tbody&gt;
+  &lt;/table&gt;
+
+&lt;table class=&quot;table is-bordered&quot;&gt;
+    &lt;tbody&gt;
+      &lt;tr&gt;
+        &lt;th class=&quot;is-light&quot; colspan=&quot;3&quot;&gt;
+          File
+          &lt;code&gt;sass/base/generic.sass&lt;/code&gt;
+        &lt;/th&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;th&gt;Variable&lt;/th&gt;
+        &lt;th&gt;From&lt;/th&gt;
+        &lt;th&gt;To&lt;/th&gt;
+      &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;
+            &lt;code&gt;$hr-background-color&lt;/code&gt;
+          &lt;/td&gt;
+          &lt;td&gt;
+            &lt;code&gt;$border&lt;/code&gt;
+          &lt;/td&gt;
+          &lt;td&gt;
+            &lt;code&gt;$background&lt;/code&gt;
+          &lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;
+            &lt;code&gt;$hr-height&lt;/code&gt;
+          &lt;/td&gt;
+          &lt;td&gt;
+            &lt;code&gt;1px&lt;/code&gt;
+          &lt;/td&gt;
+          &lt;td&gt;
+            &lt;code&gt;2px&lt;/code&gt;
+          &lt;/td&gt;
+        &lt;/tr&gt;
+      
+    &lt;/tbody&gt;
+  &lt;/table&gt;
+
+&lt;table class=&quot;table is-bordered&quot;&gt;
+    &lt;tbody&gt;
+      &lt;tr&gt;
+        &lt;th class=&quot;is-light&quot; colspan=&quot;3&quot;&gt;
+          File
+          &lt;code&gt;sass/elements/content.sass&lt;/code&gt;
+        &lt;/th&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;th&gt;Variable&lt;/th&gt;
+        &lt;th&gt;From&lt;/th&gt;
+        &lt;th&gt;To&lt;/th&gt;
+      &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;
+            &lt;code&gt;$content-heading-weight&lt;/code&gt;
+          &lt;/td&gt;
+          &lt;td&gt;
+            &lt;code&gt;$weight-normal&lt;/code&gt;
+          &lt;/td&gt;
+          &lt;td&gt;
+            &lt;code&gt;$weight-semibold&lt;/code&gt;
+          &lt;/td&gt;
+        &lt;/tr&gt;
+      
+    &lt;/tbody&gt;
+  &lt;/table&gt;
+
+&lt;table class=&quot;table is-bordered&quot;&gt;
+    &lt;tbody&gt;
+      &lt;tr&gt;
+        &lt;th class=&quot;is-light&quot; colspan=&quot;3&quot;&gt;
+          File
+          &lt;code&gt;sass/components/message.sass&lt;/code&gt;
+        &lt;/th&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;th&gt;Variable&lt;/th&gt;
+        &lt;th&gt;From&lt;/th&gt;
+        &lt;th&gt;To&lt;/th&gt;
+      &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;
+            &lt;code&gt;$message-header-padding&lt;/code&gt;
+          &lt;/td&gt;
+          &lt;td&gt;
+            &lt;code&gt;0.5em 0.75em&lt;/code&gt;
+          &lt;/td&gt;
+          &lt;td&gt;
+            &lt;code&gt;0.75em 1em&lt;/code&gt;
+          &lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;
+            &lt;code&gt;$message-body-padding&lt;/code&gt;
+          &lt;/td&gt;
+          &lt;td&gt;
+            &lt;code&gt;1em 1.25em&lt;/code&gt;
+          &lt;/td&gt;
+          &lt;td&gt;
+            &lt;code&gt;1.25em 1.5em&lt;/code&gt;
+          &lt;/td&gt;
+        &lt;/tr&gt;
+      
+    &lt;/tbody&gt;
+  &lt;/table&gt;
+
+&lt;table class=&quot;table is-bordered&quot;&gt;
+    &lt;tbody&gt;
+      &lt;tr&gt;
+        &lt;th class=&quot;is-light&quot; colspan=&quot;3&quot;&gt;
+          File
+          &lt;code&gt;sass/components/navbar.sass&lt;/code&gt;
+        &lt;/th&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;th&gt;Variable&lt;/th&gt;
+        &lt;th&gt;From&lt;/th&gt;
+        &lt;th&gt;To&lt;/th&gt;
+      &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;
+            &lt;code&gt;$navbar-item-hover-background-color&lt;/code&gt;
+          &lt;/td&gt;
+          &lt;td&gt;
+            &lt;code&gt;$background&lt;/code&gt;
+          &lt;/td&gt;
+          &lt;td&gt;
+            &lt;code&gt;$white-bis&lt;/code&gt;
+          &lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;
+            &lt;code&gt;$navbar-dropdown-border-top&lt;/code&gt;
+          &lt;/td&gt;
+          &lt;td&gt;
+            &lt;code&gt;1px solid $border&lt;/code&gt;
+          &lt;/td&gt;
+          &lt;td&gt;
+            &lt;code&gt;2px solid $border&lt;/code&gt;
+          &lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;
+            &lt;code&gt;$navbar-divider-background-color&lt;/code&gt;
+          &lt;/td&gt;
+          &lt;td&gt;
+            &lt;code&gt;$border&lt;/code&gt;
+          &lt;/td&gt;
+          &lt;td&gt;
+            &lt;code&gt;$background&lt;/code&gt;
+          &lt;/td&gt;
+        &lt;/tr&gt;
+      
+    &lt;/tbody&gt;
+  &lt;/table&gt;
+
+&lt;table class=&quot;table is-bordered&quot;&gt;
+    &lt;tbody&gt;
+      &lt;tr&gt;
+        &lt;th class=&quot;is-light&quot; colspan=&quot;3&quot;&gt;
+          File
+          &lt;code&gt;sass/layout/footer.sass&lt;/code&gt;
+        &lt;/th&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;th&gt;Variable&lt;/th&gt;
+        &lt;th&gt;From&lt;/th&gt;
+        &lt;th&gt;To&lt;/th&gt;
+      &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;
+            &lt;code&gt;$footer-background-color&lt;/code&gt;
+          &lt;/td&gt;
+          &lt;td&gt;
+            &lt;code&gt;$background&lt;/code&gt;
+          &lt;/td&gt;
+          &lt;td&gt;
+            &lt;code&gt;$white-bis&lt;/code&gt;
+          &lt;/td&gt;
+        &lt;/tr&gt;
+      
+    &lt;/tbody&gt;
+  &lt;/table&gt;
+
+&lt;h3 id=&quot;new-variables&quot; class=&quot;title is-4 is-spaced bd-anchor-title&quot;&gt;
+  &lt;span class=&quot;bd-anchor-name&quot;&gt;
+    New variables
+  &lt;/span&gt;
+  &lt;a class=&quot;bd-anchor-link&quot; href=&quot;#new-variables&quot;&gt;
+    #
+  &lt;/a&gt;
+  
+&lt;/h3&gt;
+
+&lt;table class=&quot;table is-bordered&quot;&gt;
+    &lt;tbody&gt;
+      &lt;tr&gt;
+        &lt;th class=&quot;is-light&quot; colspan=&quot;2&quot;&gt;
+          File
+          &lt;code&gt;sass/components/breadcrumb.sass&lt;/code&gt;
+        &lt;/th&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;th&gt;Name&lt;/th&gt;
+        &lt;th&gt;Value&lt;/th&gt;
+      &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;
+            &lt;code&gt;$breadcrumb-item-padding-vertical&lt;/code&gt;
+          &lt;/td&gt;
+          &lt;td&gt;
+            &lt;code&gt;0&lt;/code&gt;
+          &lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;
+            &lt;code&gt;$breadcrumb-item-padding-horizontal&lt;/code&gt;
+          &lt;/td&gt;
+          &lt;td&gt;
+            &lt;code&gt;0.75em&lt;/code&gt;
+          &lt;/td&gt;
+        &lt;/tr&gt;
+      
+    &lt;/tbody&gt;
+  &lt;/table&gt;
+
+&lt;table class=&quot;table is-bordered&quot;&gt;
+    &lt;tbody&gt;
+      &lt;tr&gt;
+        &lt;th class=&quot;is-light&quot; colspan=&quot;2&quot;&gt;
+          File
+          &lt;code&gt;sass/components/message.sass&lt;/code&gt;
+        &lt;/th&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;th&gt;Name&lt;/th&gt;
+        &lt;th&gt;Value&lt;/th&gt;
+      &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;
+            &lt;code&gt;$message-body-border-color&lt;/code&gt;
+          &lt;/td&gt;
+          &lt;td&gt;
+            &lt;code&gt;$border&lt;/code&gt;
+          &lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;
+            &lt;code&gt;$message-body-border-width&lt;/code&gt;
+          &lt;/td&gt;
+          &lt;td&gt;
+            &lt;code&gt;0 0 0 4px&lt;/code&gt;
+          &lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;
+            &lt;code&gt;$message-header-weight&lt;/code&gt;
+          &lt;/td&gt;
+          &lt;td&gt;
+            &lt;code&gt;$weight-bold&lt;/code&gt;
+          &lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;
+            &lt;code&gt;$message-header-body-border-width&lt;/code&gt;
+          &lt;/td&gt;
+          &lt;td&gt;
+            &lt;code&gt;0&lt;/code&gt;
+          &lt;/td&gt;
+        &lt;/tr&gt;
+      
+    &lt;/tbody&gt;
+  &lt;/table&gt;
+
+&lt;table class=&quot;table is-bordered&quot;&gt;
+    &lt;tbody&gt;
+      &lt;tr&gt;
+        &lt;th class=&quot;is-light&quot; colspan=&quot;2&quot;&gt;
+          File
+          &lt;code&gt;sass/components/navbar.sass&lt;/code&gt;
+        &lt;/th&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;th&gt;Name&lt;/th&gt;
+        &lt;th&gt;Value&lt;/th&gt;
+      &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;
+            &lt;code&gt;$navbar-box-shadow-size&lt;/code&gt;
+          &lt;/td&gt;
+          &lt;td&gt;
+            &lt;code&gt;0 2px 0 0&lt;/code&gt;
+          &lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;
+            &lt;code&gt;$navbar-box-shadow-color&lt;/code&gt;
+          &lt;/td&gt;
+          &lt;td&gt;
+            &lt;code&gt;$background&lt;/code&gt;
+          &lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;
+            &lt;code&gt;$navbar-padding-vertical&lt;/code&gt;
+          &lt;/td&gt;
+          &lt;td&gt;
+            &lt;code&gt;1rem&lt;/code&gt;
+          &lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;
+            &lt;code&gt;$navbar-padding-horizontal&lt;/code&gt;
+          &lt;/td&gt;
+          &lt;td&gt;
+            &lt;code&gt;2rem&lt;/code&gt;
+          &lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;
+            &lt;code&gt;$navbar-z&lt;/code&gt;
+          &lt;/td&gt;
+          &lt;td&gt;
+            &lt;code&gt;30&lt;/code&gt;
+          &lt;/td&gt;
+        &lt;/tr&gt;
+      
+    &lt;/tbody&gt;
+  &lt;/table&gt;
+
+&lt;table class=&quot;table is-bordered&quot;&gt;
+    &lt;tbody&gt;
+      &lt;tr&gt;
+        &lt;th class=&quot;is-light&quot; colspan=&quot;2&quot;&gt;
+          File
+          &lt;code&gt;sass/elements/title.sass&lt;/code&gt;
+        &lt;/th&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;th&gt;Name&lt;/th&gt;
+        &lt;th&gt;Value&lt;/th&gt;
+      &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;
+            &lt;code&gt;$title-line-height&lt;/code&gt;
+          &lt;/td&gt;
+          &lt;td&gt;
+            &lt;code&gt;1.125&lt;/code&gt;
+          &lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;
+            &lt;code&gt;$subtitle-line-height&lt;/code&gt;
+          &lt;/td&gt;
+          &lt;td&gt;
+            &lt;code&gt;1.25&lt;/code&gt;
+          &lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;
+            &lt;code&gt;$subtitle-negative-margin&lt;/code&gt;
+          &lt;/td&gt;
+          &lt;td&gt;
+            &lt;code&gt;-1.25rem&lt;/code&gt;
+          &lt;/td&gt;
+        &lt;/tr&gt;
+      
+    &lt;/tbody&gt;
+  &lt;/table&gt;
+
+&lt;h3 id=&quot;removed-variables&quot; class=&quot;title is-4 is-spaced bd-anchor-title&quot;&gt;
+  &lt;span class=&quot;bd-anchor-name&quot;&gt;
+    Removed variables
+  &lt;/span&gt;
+  &lt;a class=&quot;bd-anchor-link&quot; href=&quot;#removed-variables&quot;&gt;
+    #
+  &lt;/a&gt;
+  
+&lt;/h3&gt;
+
+&lt;table class=&quot;table is-bordered&quot;&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;File&lt;/th&gt;
+      &lt;th&gt;Removed&lt;/th&gt;
+      &lt;th&gt;Replaced with&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    
+      &lt;tr&gt;
+        &lt;td&gt;
+          &lt;code&gt;sass/components/message.sass&lt;/code&gt;
+        &lt;/td&gt;
+        &lt;td&gt;
+          &lt;code&gt;$message-body-border&lt;/code&gt;
+        &lt;/td&gt;
+        &lt;td&gt;
+          
+            &lt;code&gt;$message-body-border-color&lt;/code&gt;
+          
+            &lt;code&gt;$message-body-border-width&lt;/code&gt;
+          
+        &lt;/td&gt;
+      &lt;/tr&gt;
+    
+  &lt;/tbody&gt;
+&lt;/table&gt;
+</description>
+        <pubDate>Sat, 14 Apr 2018 00:00:00 +0100</pubDate>
+        <link>https://bulma.io/2018/04/14/migration-to-v070/</link>
+        <guid isPermaLink="true">https://bulma.io/2018/04/14/migration-to-v070/</guid>
+      </item>
+    
+      <item>
+        <title>Website redesign: clearer layout, easier navigation, better content, and much more!</title>
+        
+        <description>&lt;p&gt;The Bulma website has been widely redesigned! There’s been a lot of work, to say the least:&lt;/p&gt;
+
+&lt;figure&gt;
+  &lt;img src=&quot;https://bulma.io/images/blog/v7/files.png&quot; alt=&quot;files&quot; width=&quot;312&quot; height=&quot;37&quot; /&gt;
+  &lt;br /&gt;
+  &lt;img src=&quot;https://bulma.io/images/blog/v7/diff.png&quot; alt=&quot;diff&quot; width=&quot;167&quot; height=&quot;38&quot; /&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Just see for yourself!&lt;/p&gt;
+
+&lt;div class=&quot;columns&quot;&gt;
+  &lt;div class=&quot;column&quot;&gt;
+    &lt;p class=&quot;has-text-centered has-text-grey-light&quot;&gt;Before&lt;/p&gt;
+    &lt;a href=&quot;https://bulma.io/images/blog/v7/before.png&quot;&gt;
+      &lt;img src=&quot;https://bulma.io/images/blog/v7/before.png&quot; alt=&quot;v7 website&quot; width=&quot;1400&quot; height=&quot;1200&quot; /&gt;
+    &lt;/a&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;column&quot;&gt;
+    &lt;p class=&quot;has-text-centered has-text-grey-light&quot;&gt;After&lt;/p&gt;
+    &lt;a href=&quot;https://bulma.io/images/blog/v7/after.png&quot;&gt;
+      &lt;img src=&quot;https://bulma.io/images/blog/v7/after.png&quot; alt=&quot;v7 website&quot; width=&quot;1400&quot; height=&quot;1200&quot; /&gt;
+    &lt;/a&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&quot;navbar&quot; class=&quot;title is-4 is-spaced bd-anchor-title&quot;&gt;
+  &lt;span class=&quot;bd-anchor-name&quot;&gt;
+    Navbar
+  &lt;/span&gt;
+  &lt;a class=&quot;bd-anchor-link&quot; href=&quot;#navbar&quot;&gt;
+    #
+  &lt;/a&gt;
+  
+&lt;/h3&gt;
+
+&lt;p&gt;The &lt;strong&gt;navbar&lt;/strong&gt; has been updated with a lighter markup and cleaner design:&lt;/p&gt;
+
+&lt;figure&gt;
+  &lt;a href=&quot;https://bulma.io/images/blog/v7/navbar.png&quot;&gt;
+    &lt;img src=&quot;https://bulma.io/images/blog/v7/navbar.png&quot; alt=&quot;navbar&quot; width=&quot;1080&quot; height=&quot;84&quot; /&gt;
+  &lt;/a&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;This doesn’t affect the current navbars. There’s actually a new modifier called &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;is-spaced&lt;/code&gt; that was created for this new navbar. Documentation coming soon!&lt;/p&gt;
+
+&lt;h3 id=&quot;customize-example&quot; class=&quot;title is-4 is-spaced bd-anchor-title&quot;&gt;
+  &lt;span class=&quot;bd-anchor-name&quot;&gt;
+    Customize example
+  &lt;/span&gt;
+  &lt;a class=&quot;bd-anchor-link&quot; href=&quot;#customize-example&quot;&gt;
+    #
+  &lt;/a&gt;
+  
+&lt;/h3&gt;
+
+&lt;p&gt;On the homepage, there’s a new &lt;a href=&quot;/#customize&quot;&gt;&lt;strong&gt;customization&lt;/strong&gt; section with a live example&lt;/a&gt;:&lt;/p&gt;
+
+&lt;figure&gt;
+  &lt;a href=&quot;https://bulma.io/#customize&quot;&gt;
+    &lt;img src=&quot;https://bulma.io/images/blog/v7/customize.png&quot; alt=&quot;customize&quot; width=&quot;492&quot; height=&quot;582&quot; /&gt;
+  &lt;/a&gt;
+&lt;/figure&gt;
+
+&lt;h3 id=&quot;breadcrumb&quot; class=&quot;title is-4 is-spaced bd-anchor-title&quot;&gt;
+  &lt;span class=&quot;bd-anchor-name&quot;&gt;
+    Breadcrumb
+  &lt;/span&gt;
+  &lt;a class=&quot;bd-anchor-link&quot; href=&quot;#breadcrumb&quot;&gt;
+    #
+  &lt;/a&gt;
+  
+&lt;/h3&gt;
+
+&lt;figure&gt;
+  &lt;a href=&quot;https://bulma.io/images/blog/v7/breadcrumb.png&quot;&gt;
+    &lt;img src=&quot;https://bulma.io/images/blog/v7/breadcrumb.png&quot; alt=&quot;breadcrumb&quot; width=&quot;422&quot; height=&quot;24&quot; /&gt;
+  &lt;/a&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;A &lt;strong&gt;breadcrumb&lt;/strong&gt; is now visible at the top of each page, to easily navigate up and down the hierarchy.&lt;/p&gt;
+
+&lt;p&gt;This has led to the creation of new &lt;strong&gt;intermediate pages&lt;/strong&gt;:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;/documentation&quot;&gt;documentation&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;/documentation/modifiers&quot;&gt;documentation/modifiers&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;/documentation/columns&quot;&gt;documentation/columns&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;/documentation/layout&quot;&gt;documentation/layout&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;/documentation/form&quot;&gt;documentation/form&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;/documentation/elements&quot;&gt;documentation/elements&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;/documentation/components&quot;&gt;documentation/components&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;/more&quot;&gt;more&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;links&quot; class=&quot;title is-4 is-spaced bd-anchor-title&quot;&gt;
+  &lt;span class=&quot;bd-anchor-name&quot;&gt;
+    Links
+  &lt;/span&gt;
+  &lt;a class=&quot;bd-anchor-link&quot; href=&quot;#links&quot;&gt;
+    #
+  &lt;/a&gt;
+  
+&lt;/h3&gt;
+
+&lt;p&gt;These intermediate pages have new &lt;strong&gt;link boxes&lt;/strong&gt; that help dive into each sub-category:&lt;/p&gt;
+
+&lt;figure&gt;
+  &lt;a href=&quot;https://bulma.io/images/blog/v7/links.png&quot;&gt;
+    &lt;img src=&quot;https://bulma.io/images/blog/v7/links.png&quot; alt=&quot;footer links&quot; width=&quot;664&quot; height=&quot;468&quot; /&gt;
+  &lt;/a&gt;
+&lt;/figure&gt;
+
+&lt;h3 id=&quot;previous-next&quot; class=&quot;title is-4 is-spaced bd-anchor-title&quot;&gt;
+  &lt;span class=&quot;bd-anchor-name&quot;&gt;
+    Previous/Next
+  &lt;/span&gt;
+  &lt;a class=&quot;bd-anchor-link&quot; href=&quot;#previous-next&quot;&gt;
+    #
+  &lt;/a&gt;
+  
+&lt;/h3&gt;
+
+&lt;p&gt;Next to the breadcrumb, you can easily navigate to the &lt;strong&gt;sibling&lt;/strong&gt; pages with the &lt;strong&gt;previous&lt;/strong&gt; and &lt;strong&gt;next&lt;/strong&gt; links:&lt;/p&gt;
+
+&lt;figure&gt;
+  &lt;a href=&quot;https://bulma.io/images/blog/v7/prevnext.png&quot;&gt;
+    &lt;img src=&quot;https://bulma.io/images/blog/v7/prevnext.png&quot; alt=&quot;prevnext buttons&quot; width=&quot;48&quot; height=&quot;24&quot; /&gt;
+  &lt;/a&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;These links are also available at the bottom:&lt;/p&gt;
+
+&lt;figure&gt;
+  &lt;a href=&quot;https://bulma.io/images/blog/v7/prevnextbis.png&quot;&gt;
+    &lt;img src=&quot;https://bulma.io/images/blog/v7/prevnextbis.png&quot; alt=&quot;prevnextbis buttons&quot; width=&quot;664&quot; height=&quot;58&quot; /&gt;
+  &lt;/a&gt;
+&lt;/figure&gt;
+
+&lt;h3 id=&quot;categories&quot; class=&quot;title is-4 is-spaced bd-anchor-title&quot;&gt;
+  &lt;span class=&quot;bd-anchor-name&quot;&gt;
+    Categories
+  &lt;/span&gt;
+  &lt;a class=&quot;bd-anchor-link&quot; href=&quot;#categories&quot;&gt;
+    #
+  &lt;/a&gt;
+  
+&lt;/h3&gt;
+
+&lt;p&gt;There’s a new &lt;strong&gt;sidebar&lt;/strong&gt; including a navigation menu with all the categories and sub-categories:&lt;/p&gt;
+
+&lt;figure&gt;
+  &lt;a href=&quot;https://bulma.io/images/blog/v7/categories.png&quot;&gt;
+    &lt;img src=&quot;https://bulma.io/images/blog/v7/categories.png&quot; alt=&quot;categories menu&quot; width=&quot;256&quot; height=&quot;397&quot; /&gt;
+  &lt;/a&gt;
+&lt;/figure&gt;
+
+&lt;h3 id=&quot;scroll-spy&quot; class=&quot;title is-4 is-spaced bd-anchor-title&quot;&gt;
+  &lt;span class=&quot;bd-anchor-name&quot;&gt;
+    Scroll spy
+  &lt;/span&gt;
+  &lt;a class=&quot;bd-anchor-link&quot; href=&quot;#scroll-spy&quot;&gt;
+    #
+  &lt;/a&gt;
+  
+&lt;/h3&gt;
+
+&lt;p&gt;On some pages below the categories, you’ll find a new menu called “On this page” which is actually a &lt;strong&gt;scroll spy&lt;/strong&gt;:&lt;/p&gt;
+
+&lt;figure&gt;
+  &lt;a href=&quot;https://bulma.io/images/blog/v7/scrollspy.png&quot;&gt;
+    &lt;img src=&quot;https://bulma.io/images/blog/v7/scrollspy.png&quot; alt=&quot;scrollspy menu&quot; width=&quot;199&quot; height=&quot;341&quot; /&gt;
+  &lt;/a&gt;
+&lt;/figure&gt;
+
+&lt;h3 id=&quot;footer&quot; class=&quot;title is-4 is-spaced bd-anchor-title&quot;&gt;
+  &lt;span class=&quot;bd-anchor-name&quot;&gt;
+    Footer
+  &lt;/span&gt;
+  &lt;a class=&quot;bd-anchor-link&quot; href=&quot;#footer&quot;&gt;
+    #
+  &lt;/a&gt;
+  
+&lt;/h3&gt;
+
+&lt;p&gt;The footer has been redesigned as well. Among other things, there’s a &lt;strong&gt;sitemap&lt;/strong&gt; available:&lt;/p&gt;
+
+&lt;figure&gt;
+  &lt;a href=&quot;https://bulma.io/images/blog/v7/footer.png&quot;&gt;
+    &lt;img src=&quot;https://bulma.io/images/blog/v7/footer.png&quot; alt=&quot;footer links&quot; width=&quot;984&quot; height=&quot;302&quot; /&gt;
+  &lt;/a&gt;
+&lt;/figure&gt;
+
+&lt;h3 id=&quot;code&quot; class=&quot;title is-4 is-spaced bd-anchor-title&quot;&gt;
+  &lt;span class=&quot;bd-anchor-name&quot;&gt;
+    Code
+  &lt;/span&gt;
+  &lt;a class=&quot;bd-anchor-link&quot; href=&quot;#code&quot;&gt;
+    #
+  &lt;/a&gt;
+  
+&lt;/h3&gt;
+
+&lt;p&gt;The Bulma website is built with &lt;strong&gt;Jekyll&lt;/strong&gt;. In the process of this redesign, the underlying code that helps maintain this website has been optimized and cleaned up as well.&lt;/p&gt;
+
+&lt;p&gt;This will help further updates to be easier.&lt;/p&gt;
+</description>
+        <pubDate>Fri, 13 Apr 2018 00:00:00 +0100</pubDate>
+        <link>https://bulma.io/2018/04/13/website-redesign/</link>
+        <guid isPermaLink="true">https://bulma.io/2018/04/13/website-redesign/</guid>
+      </item>
+    
+      <item>
+        <title>Bulma supports Font Awesome&amp;nbsp;5</title>
+        
+        <description>&lt;p&gt;Bulma is &lt;strong&gt;icon library agnostic&lt;/strong&gt;: this means that you can use &lt;em&gt;any&lt;/em&gt; icon font library (like Font Awesome 4 or 5, Material Design Icons, Ionicons…) with Bulma’s &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;icon&lt;/code&gt; class.&lt;/p&gt;
+
+&lt;p&gt;As a result, &lt;strong&gt;Bulma already supports Font Awesome 5&lt;/strong&gt;! 😃&lt;/p&gt;
+
+&lt;p&gt;Since the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;icon&lt;/code&gt; element is simply a &lt;strong&gt;container&lt;/strong&gt; for any icon font *allowing the layout to reserve a spot for the icon while it loads), it supports any size of Font Awesome 4 and 5.&lt;/p&gt;
+
+&lt;p&gt;For the sake of being in sync with Bulma users, I’ve recently updated the website to actually use Font Awesome 5! The process of &lt;strong&gt;migrating&lt;/strong&gt; from Font Awesome 4 to 5 is straightforward. You simply need to:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;include Font Awesome 5 instead, &lt;a href=&quot;https://fontawesome.com/get-started&quot;&gt;using the script tag&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;replace &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;fa&lt;/code&gt; classes with their &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;fas&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;fab&lt;/code&gt; equivalents&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;That’s it!&lt;/p&gt;
+
+&lt;p&gt;Check out the &lt;a href=&quot;/documentation/elements/icon/&quot;&gt;icon documentation&lt;/a&gt;.&lt;/p&gt;
+</description>
+        <pubDate>Thu, 18 Jan 2018 00:00:00 +0000</pubDate>
+        <link>https://bulma.io/2018/01/18/bulma-supports-font-awesome-5/</link>
+        <guid isPermaLink="true">https://bulma.io/2018/01/18/bulma-supports-font-awesome-5/</guid>
+      </item>
+    
+      <item>
+        <title>Bulma is on Patreon!</title>
+        
+        <description>&lt;p&gt;&lt;strong&gt;Bulma&lt;/strong&gt; has now its own &lt;a href=&quot;https://www.patreon.com/jgthms&quot;&gt;Patreon page&lt;/a&gt;:&lt;/p&gt;
+
+&lt;figure&gt;
+  &lt;a href=&quot;https://www.patreon.com/jgthms&quot; target=&quot;_blank&quot;&gt;
+    &lt;img src=&quot;https://bulma.io/images/blog/patreon-homepage.png&quot; alt=&quot;Bulma Patreon homepage&quot; width=&quot;840&quot; height=&quot;525&quot; /&gt;
+  &lt;/a&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;This will allow people to easily support Bulma, and ensure its future development.&lt;/p&gt;
+</description>
+        <pubDate>Tue, 14 Nov 2017 00:00:00 +0000</pubDate>
+        <link>https://bulma.io/2017/11/14/bulma-is-on-patreon/</link>
+        <guid isPermaLink="true">https://bulma.io/2017/11/14/bulma-is-on-patreon/</guid>
+      </item>
+    
+      <item>
+        <title>New feature: fixed navbar</title>
+        
+        <description>&lt;p&gt;You can now fix a &lt;a href=&quot;/documentation/components/navbar/#fixed-navbar&quot;&gt;navbar&lt;/a&gt; to the &lt;strong&gt;top&lt;/strong&gt; or the &lt;strong&gt;bottom&lt;/strong&gt;:&lt;/p&gt;
+
+&lt;figure&gt;
+  &lt;video width=&quot;602.5&quot; height=&quot;360&quot; autoplay=&quot;&quot; muted=&quot;&quot; loop=&quot;&quot;&gt;
+    &lt;source src=&quot;https://bulma.io/images/blog/fixed-navbar.mp4&quot; type=&quot;video/mp4&quot; /&gt;
+  &lt;/video&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;&lt;a href=&quot;/documentation/components/navbar/#fixed-navbar&quot;&gt;Check it out!&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;As a added &lt;strong&gt;bonus&lt;/strong&gt;, the bottom navbar required a new &lt;strong&gt;dropup&lt;/strong&gt; feature which has also been implemented!&lt;/p&gt;
+
+&lt;figure&gt;
+  &lt;a href=&quot;https://bulma.io/documentation/components/navbar/#fixed-navbar&quot;&gt;
+    &lt;img src=&quot;https://bulma.io/images/blog/dropup.png&quot; alt=&quot;Navbar dropup&quot; width=&quot;660&quot; height=&quot;239&quot; /&gt;
+  &lt;/a&gt;
+&lt;/figure&gt;
+</description>
+        <pubDate>Wed, 01 Nov 2017 00:00:00 +0000</pubDate>
+        <link>https://bulma.io/2017/11/01/fixed-navbar/</link>
+        <guid isPermaLink="true">https://bulma.io/2017/11/01/fixed-navbar/</guid>
+      </item>
+    
+      <item>
+        <title>New feature: list of buttons</title>
+        
+        <description>&lt;p&gt;Similarly to the &lt;a href=&quot;/2017/08/03/list-of-tags/&quot;&gt;list of tags&lt;/a&gt; launched a few months ago, the &lt;a href=&quot;/documentation/elements/button/&quot;&gt;button&lt;/a&gt; has its own &lt;strong&gt;list of buttons&lt;/strong&gt;:&lt;/p&gt;
+
+&lt;figure&gt;
+  &lt;a href=&quot;https://bulma.io/documentation/elements/button/#list-of-buttons&quot;&gt;
+    &lt;img src=&quot;https://bulma.io/images/blog/list-of-buttons.png&quot; alt=&quot;List of buttons in CSS&quot; width=&quot;660&quot; height=&quot;550&quot; /&gt;
+  &lt;/a&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Although you could already &lt;strong&gt;group&lt;/strong&gt; buttons by using &lt;a href=&quot;/documentation/form/general/#form-group&quot;&gt;from groups&lt;/a&gt;, this new &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;buttons&lt;/code&gt; class makes everything easier.&lt;/p&gt;
+</description>
+        <pubDate>Sun, 22 Oct 2017 00:00:00 +0100</pubDate>
+        <link>https://bulma.io/2017/10/22/list-of-buttons/</link>
+        <guid isPermaLink="true">https://bulma.io/2017/10/22/list-of-buttons/</guid>
+      </item>
+    
+  </channel>
+</rss>
