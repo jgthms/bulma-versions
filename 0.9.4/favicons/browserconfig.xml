@@ -2,7 +2,7 @@
 <browserconfig>
   <msapplication>
     <tile>
-      <square150x150logo src="/favicons/mstile-150x150.png?v=201701041855"/>
+      <square150x150logo src="https://versions.bulma.io/0.9.4/favicons/mstile-150x150.png?v=201701041855"/>
       <TileColor>#00d1b2</TileColor>
     </tile>
   </msapplication>

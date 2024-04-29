@@ -10,7 +10,7 @@
       <name>Bulma: Free, open source, and modern CSS framework based on Flexbox</name>
       <email>bbxdesign@gmail.com</email>
     </author>
-    <atom:link href="https://bulma.io/atom.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://versions.bulma.io/0.9.4/atom.xml" rel="self" type="application/rss+xml" />
     
       <item>
         <title>The `.block`, probably Bulma’s most important feature</title>
